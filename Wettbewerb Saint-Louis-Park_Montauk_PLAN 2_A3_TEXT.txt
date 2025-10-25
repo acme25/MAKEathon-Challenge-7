@@ -1,0 +1,179 @@
+--- Seite 1 ---
+BAUFELD 1
+261.00
+260.00
+259.80
+259.60
+259.40
+259.20
+OK 262.90
+UK  259.40
+ 
+261.00
+264.40
+262.80
+259.80
+Chaussierung / Pflästerung
+NICHE SOUS L'OSIER
+PROMENADE
+Mischverkehrszone
+Asphalt geschliffen
+Stützenfüsse aus Inventar
+ruderale Kiesflächen
+Wildhecken-Strukturen
+Magerwiese
+Blumenrasen
+bestehende Trauerweide
+Blumenrasen
+ruderale Kiesflächen
+Stampflehmmauer
+Steg
+Wassertrog aus Inventar
+Kalksteinblöcke aus Inventar
+10m
+Situation 1:200
+M O NTAUK
+Wettbewerb Saint-Louis-Park
+BAUFELD 2.1
+261.00
+260.00
+261.50
+261.20
+261.40
+261.40
+259.82
+OK 263.00
+UK 260.00
+260.20
+265.80
+261.00
+265.80
+261.00
+261.00
+D: 259.91
+S: 255.61
+ID 0227.504
+264.00
+263.50
+264.00
+264.00
+261.00
+264.00
+264.60
+264.00
+265.00
+Picnic
+Ping Pong
+Liegen
+mobile Sitzelmente
+Spielepavillon
+Spielbereich Kleinkinder
+Asphalt geschliffen
+Chaussierung
+Blumenrasen
+ehem. Geleise
+PLACE DE LA VOIE
+PARC RUDÈRAL
+wechselfeuchte Senke / Retentionsbecken
+Kalksteinblöcke aus Inventar
+ruderale Kiesflächen
+ruderale Sandflächen
+Wildhecken-Strukturen
+Stampflehmmauer
+Böschung max 60°
+Trockenrasen
+Magerwiese
+Blumenrasen
+Velo - PP
+20 Stk
+Sitzbank
+Infotafel
+Sitzbank
+Trinkbrunnen
+mobile Sitzelmente
+Blumenrasen
+Trockenrasen
+Steg
+NICHE DU BUTOIR
+Fallschutzbelag
+Spielplatz
+Spielbereich "Wasser"
+ehem. Prellbock
+Asphalt geschliffen
+PROMENADE
+Mischverkehrszone
+Aufenthaltsplatz
+Chaussierung
+Asphalt geschliffen
+PARC RUDÈRAL
+Wildhecken-Strukturen
+ruderale Sandflächen
+ruderale Kiesflächen
+Wassertrog aus Inventar
+Granitblöcke aus Inventar
+Sitzarena
+OK 263.00
+UK  260.00
+10m
+Situation 1:200
+Promenade
+Niche sous l'osier
++3.50
+0.00
+Parc rudéral
+Schnitt A-A'  1:200
+10m
++2.50
+0.00
+Promenade
+Parc rudéral
+Turm & Mont Saint Louis
+Schnitt B-B'  1:200
+10m
+Place de la voie
+Promenade
++2.70
+0.00
+Parc rudéral
+Tertre 1
+Schnitt C-C'  1:200
+10m
+Stampflehm
+Habitat für Flora
+und Fauna
+10% Anzug
+STÜTZM AUER
+Eisenbahnschienen Recycling
+PLATTFORMEN
+Eisenbahnschienen Recycling
+KO NSTRUKTIO N STEG
+AUSSICHTSTURM
+Granitblöcke Recycling
+SITZTREPPEN
+BAUFELD 1
+259.74
+260.00
+259.51
+259.52
+259.55
+259.60
+259.62 
+2
+260.00
+260.00
+266.00
+PROMENADE
+Mischverkehrszone
+Asphalt geschliffen
+AUSSICHTSTURM
+Steg
+ruderale Kiesflächen
+Wildhecken-Strukturen
+Blumenrasen
+Magerwiese
+Liegen
+10m
+Situation 1:200
+Im Parc Rudéral auf dem Themenweg
+Treffpunkt unter der Trauerweide
+Auftakt beim Place de la voie
