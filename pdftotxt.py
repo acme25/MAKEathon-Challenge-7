@@ -17,7 +17,8 @@ import io
 from PIL import Image
 import pytesseract
 
-PDF_PATH = r"Wettbewerb Saint-Louis-Park_Montauk_PLAN 2_A3.pdf"
+PDF_PATH = r"Quartierpark Thurgauerstrasse.pdf"
+
 LANG = "deu+eng"
 
 def extract_text_plain(page: fitz.Page) -> str:
