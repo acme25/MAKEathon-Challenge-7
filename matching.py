@@ -62,6 +62,7 @@ def read_hierarchical_excel(xlsx_path: str, sheet="Tabelle1"):
             entries.append(path)
     return entries
 
+####### NUR DASSSSSSSS
 def build_catalog(entries):
     """
     Aus den Pfaden einen Katalog bauen:

@@ -1,0 +1,1080 @@
+@prefix : <http://www.semanticweb.org/ontology/landschaftsbau#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontology/landschaftsbau> .
+
+<http://www.semanticweb.org/ontology/landschaftsbau> rdf:type owl:Ontology ;
+    rdfs:label "Landschaftsbau Hierarchie Ontologie"@de ;
+    rdfs:comment "Vollständige Hierarchie für Oberflächengestaltung im Landschaftsbau mit 12 Ebenen"@de .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+:hatUnterkategorie rdf:type owl:ObjectProperty ;
+    rdfs:domain :Kategorie ;
+    rdfs:range :Kategorie ;
+    rdfs:label "hat Unterkategorie"@de .
+
+:hatVerkehrslastklasse rdf:type owl:ObjectProperty ;
+    rdfs:domain :Produkt ;
+    rdfs:range :Verkehrslastklasse ;
+    rdfs:label "hat Verkehrslastklasse"@de .
+
+:hatBauweise rdf:type owl:ObjectProperty ;
+    rdfs:domain :Produkt ;
+    rdfs:range :Bauweise ;
+    rdfs:label "hat Bauweise"@de .
+
+:hatOberflaeche rdf:type owl:ObjectProperty ;
+    rdfs:domain :Produkt ;
+    rdfs:range :Oberflaechenbearbeitung ;
+    rdfs:label "hat Oberflächenbearbeitung"@de .
+
+:hatMaterial rdf:type owl:ObjectProperty ;
+    rdfs:domain :Produkt ;
+    rdfs:range :Material ;
+    rdfs:label "hat Material"@de .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+:ebene rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Kategorie ;
+    rdfs:range xsd:integer ;
+    rdfs:label "Hierarchieebene"@de .
+
+:bezeichnung rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Kategorie ;
+    rdfs:range xsd:string ;
+    rdfs:label "Bezeichnung"@de .
+
+:steindicke rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Pflasterstein ;
+    rdfs:range xsd:string ;
+    rdfs:label "Steindicke"@de .
+
+#################################################################
+#    Classes
+#################################################################
+
+:Kategorie rdf:type owl:Class ;
+    rdfs:label "Kategorie"@de .
+
+:Produkt rdf:type owl:Class ;
+    rdfs:subClassOf :Kategorie ;
+    rdfs:label "Produkt"@de .
+
+:Material rdf:type owl:Class ;
+    rdfs:label "Material"@de .
+
+:Bauweise rdf:type owl:Class ;
+    rdfs:label "Bauweise"@de .
+
+:Verkehrslastklasse rdf:type owl:Class ;
+    rdfs:label "Verkehrslastklasse"@de .
+
+:Oberflaechenbearbeitung rdf:type owl:Class ;
+    rdfs:label "Oberflächenbearbeitung"@de .
+
+#################################################################
+#    Individuals - Hauptkategorien (Ebene 1)
+#################################################################
+
+:Oberflaechen rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Oberflächengestaltung"@de ;
+    :ebene 1 .
+
+#################################################################
+#    Ebene 2 - Hauptgruppen
+#################################################################
+
+:Belaege rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Beläge"@de ;
+    :ebene 2 .
+
+:Oberflaechen :hatUnterkategorie :Belaege .
+
+:Gruenflaechen rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Grünflächen"@de ;
+    :ebene 2 .
+
+:Oberflaechen :hatUnterkategorie :Gruenflaechen .
+
+:Wasserflaechen rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Wasserflächen"@de ;
+    :ebene 2 .
+
+:Oberflaechen :hatUnterkategorie :Wasserflaechen .
+
+:Gehoelzpflanzungen rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Gehölzpflanzungen"@de ;
+    :ebene 2 .
+
+:Oberflaechen :hatUnterkategorie :Gehoelzpflanzungen .
+
+:Treppenanlagen rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Treppenanlagen"@de ;
+    :ebene 2 .
+
+:Oberflaechen :hatUnterkategorie :Treppenanlagen .
+
+#################################################################
+#    Ebene 3 - Asphaltbeläge
+#################################################################
+
+:Asphaltbelaege rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Asphaltbeläge"@de ;
+    :ebene 3 .
+
+:Belaege :hatUnterkategorie :Asphaltbelaege .
+
+:Betonbelaege rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Betonbeläge"@de ;
+    :ebene 3 .
+
+:Belaege :hatUnterkategorie :Betonbelaege .
+
+:Plattenbelaege rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Plattenbeläge"@de ;
+    :ebene 3 .
+
+:Belaege :hatUnterkategorie :Plattenbelaege .
+
+:Pflasterbelaege rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Pflasterbeläge"@de ;
+    :ebene 3 .
+
+:Belaege :hatUnterkategorie :Pflasterbelaege .
+
+:UngebundeneBelaege rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "ungebundene Beläge"@de ;
+    :ebene 3 .
+
+:Belaege :hatUnterkategorie :UngebundeneBelaege .
+
+:BegruenteBelaege rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "begrünte Beläge"@de ;
+    :ebene 3 .
+
+:Belaege :hatUnterkategorie :BegruenteBelaege .
+
+:Festkiesbelaege rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Festkiesbeläge"@de ;
+    :ebene 3 .
+
+:Belaege :hatUnterkategorie :Festkiesbelaege .
+
+:Holzbelaege rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Holzbeläge"@de ;
+    :ebene 3 .
+
+:Belaege :hatUnterkategorie :Holzbelaege .
+
+:SpielSportbelaege rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Spiel- und Sportbeläge"@de ;
+    :ebene 3 .
+
+:Belaege :hatUnterkategorie :SpielSportbelaege .
+
+#################################################################
+#    Ebene 4 - Walzasphalt
+#################################################################
+
+:Walzasphalt rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Walzasphalt"@de ;
+    :ebene 4 .
+
+:Asphaltbelaege :hatUnterkategorie :Walzasphalt .
+
+:Gussasphalt rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Gussasphalt"@de ;
+    :ebene 4 .
+
+:Asphaltbelaege :hatUnterkategorie :Gussasphalt .
+
+#################################################################
+#    Ebene 5 - Asphaltbeton AC
+#################################################################
+
+:AsphaltbetonAC rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Asphaltbeton AC"@de ;
+    :ebene 5 .
+
+:Walzasphalt :hatUnterkategorie :AsphaltbetonAC .
+
+:Splittmastixasphalt rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Splittmastixasphalt"@de ;
+    :ebene 5 .
+
+:Walzasphalt :hatUnterkategorie :Splittmastixasphalt .
+
+:OffenporigerAsphalt rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "offenporiger Asphalt"@de ;
+    :ebene 5 .
+
+:Walzasphalt :hatUnterkategorie :OffenporigerAsphalt .
+
+:MA rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "MA"@de ;
+    :ebene 5 .
+
+:Gussasphalt :hatUnterkategorie :MA .
+
+#################################################################
+#    Ebene 6 - AC L
+#################################################################
+
+:AC_L rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "AC L"@de ;
+    :ebene 6 .
+
+:AsphaltbetonAC :hatUnterkategorie :AC_L .
+
+:AC_N rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "AC N"@de ;
+    :ebene 6 .
+
+:AsphaltbetonAC :hatUnterkategorie :AC_N .
+
+:AC_S rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "AC S"@de ;
+    :ebene 6 .
+
+:AsphaltbetonAC :hatUnterkategorie :AC_S .
+
+:AC_MR rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "AC MR"@de ;
+    :ebene 6 .
+
+:AsphaltbetonAC :hatUnterkategorie :AC_MR .
+
+:SMA rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "SMA"@de ;
+    :ebene 6 .
+
+:Splittmastixasphalt :hatUnterkategorie :SMA .
+
+:PA rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "PA"@de ;
+    :ebene 6 .
+
+:OffenporigerAsphalt :hatUnterkategorie :PA .
+
+#################################################################
+#    Verkehrslastklassen (Ebene 7)
+#################################################################
+
+:VerkehrslastklasseTP rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse TP"@de ;
+    :ebene 7 .
+
+:AC_L :hatUnterkategorie :VerkehrslastklasseTP .
+:AC_N :hatUnterkategorie :VerkehrslastklasseTP .
+:PA :hatUnterkategorie :VerkehrslastklasseTP .
+
+:VerkehrslastklasseT1 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T1"@de ;
+    :ebene 7 .
+
+:AC_L :hatUnterkategorie :VerkehrslastklasseT1 .
+:AC_N :hatUnterkategorie :VerkehrslastklasseT1 .
+:PA :hatUnterkategorie :VerkehrslastklasseT1 .
+:MA :hatUnterkategorie :VerkehrslastklasseT1 .
+
+:VerkehrslastklasseT2 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T2"@de ;
+    :ebene 7 .
+
+:AC_L :hatUnterkategorie :VerkehrslastklasseT2 .
+:AC_N :hatUnterkategorie :VerkehrslastklasseT2 .
+:PA :hatUnterkategorie :VerkehrslastklasseT2 .
+:MA :hatUnterkategorie :VerkehrslastklasseT2 .
+
+:VerkehrslastklasseT3 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T3"@de ;
+    :ebene 7 .
+
+:AC_N :hatUnterkategorie :VerkehrslastklasseT3 .
+:AC_S :hatUnterkategorie :VerkehrslastklasseT3 .
+:PA :hatUnterkategorie :VerkehrslastklasseT3 .
+:SMA :hatUnterkategorie :VerkehrslastklasseT3 .
+:MA :hatUnterkategorie :VerkehrslastklasseT3 .
+
+:VerkehrslastklasseT4 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T4"@de ;
+    :ebene 7 .
+
+:AC_S :hatUnterkategorie :VerkehrslastklasseT4 .
+:SMA :hatUnterkategorie :VerkehrslastklasseT4 .
+
+#################################################################
+#    Ebene 8 - Produkttypen
+#################################################################
+
+:AC_4L rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "AC 4 L"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseTP :hatUnterkategorie :AC_4L .
+
+:AC_8L rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "AC 8 L"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseTP :hatUnterkategorie :AC_8L .
+
+:AC_11L rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "AC 11 L"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseTP :hatUnterkategorie :AC_11L .
+
+:AC_8N rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "AC 8 N"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseTP :hatUnterkategorie :AC_8N .
+
+:AC_11N rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "AC 11 N"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseTP :hatUnterkategorie :AC_11N .
+
+:AC_16N rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "AC 16 N"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseTP :hatUnterkategorie :AC_16N .
+
+:AC_8S rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "AC 8 S"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseT3 :hatUnterkategorie :AC_8S .
+
+:AC_11S rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "AC 11 S"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseT3 :hatUnterkategorie :AC_11S .
+
+:SMA_8 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "SMA 8"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseT3 :hatUnterkategorie :SMA_8 .
+
+:SMA_11 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "SMA 11"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseT3 :hatUnterkategorie :SMA_11 .
+
+:PA_8 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "PA 8"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseTP :hatUnterkategorie :PA_8 .
+
+:PA_11 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "PA 11"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseTP :hatUnterkategorie :PA_11 .
+
+:MA_4N rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "MA 4 N"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseT1 :hatUnterkategorie :MA_4N .
+
+:MA_8N rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "MA 8 N"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseT1 :hatUnterkategorie :MA_8N .
+
+:MA_11N rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "MA 11 N"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseT1 :hatUnterkategorie :MA_11N .
+
+:MA_8S rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "MA 8 S"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseT3 :hatUnterkategorie :MA_8S .
+
+:MA_11S rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "MA 11 S"@de ;
+    :ebene 8 .
+
+:VerkehrslastklasseT3 :hatUnterkategorie :MA_11S .
+
+#################################################################
+#    Ebene 9 - Einstreu
+#################################################################
+
+:OhneEinstreu rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "ohne Einstreu"@de ;
+    :ebene 9 .
+
+:AC_4L :hatUnterkategorie :OhneEinstreu .
+:SMA_8 :hatUnterkategorie :OhneEinstreu .
+:MA_4N :hatUnterkategorie :OhneEinstreu .
+
+:MitEinstreu rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "mit Einstreu"@de ;
+    :ebene 9 .
+
+:AC_4L :hatUnterkategorie :MitEinstreu .
+:SMA_8 :hatUnterkategorie :MitEinstreu .
+:MA_4N :hatUnterkategorie :MitEinstreu .
+
+#################################################################
+#    Ebene 10 - Farbe
+#################################################################
+
+:Schwarz rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "schwarz"@de ;
+    :ebene 10 .
+
+:OhneEinstreu :hatUnterkategorie :Schwarz .
+:MitEinstreu :hatUnterkategorie :Schwarz .
+:PA_8 :hatUnterkategorie :Schwarz .
+
+:Color rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Color"@de ;
+    :ebene 10 .
+
+:OhneEinstreu :hatUnterkategorie :Color .
+:MitEinstreu :hatUnterkategorie :Color .
+:PA_8 :hatUnterkategorie :Color .
+
+#################################################################
+#    Ebene 11 - Gerüstkorn
+#################################################################
+
+:StandardGeruest rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Standard Gerüstkorn"@de ;
+    :ebene 11 .
+
+:Schwarz :hatUnterkategorie :StandardGeruest .
+:Color :hatUnterkategorie :StandardGeruest .
+
+:SpeziellesGeruest rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "spezielles Gerüstkorn"@de ;
+    :ebene 11 .
+
+:Schwarz :hatUnterkategorie :SpeziellesGeruest .
+:Color :hatUnterkategorie :SpeziellesGeruest .
+
+#################################################################
+#    Ebene 12 - Oberflächenbearbeitung
+#################################################################
+
+:OhneOberflaeche rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "ohne Oberflächenbearbeitung"@de ;
+    :ebene 12 .
+
+:StandardGeruest :hatUnterkategorie :OhneOberflaeche .
+:SpeziellesGeruest :hatUnterkategorie :OhneOberflaeche .
+
+:Gestrahlt rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "gestrahlt"@de ;
+    :ebene 12 .
+
+:StandardGeruest :hatUnterkategorie :Gestrahlt .
+:SpeziellesGeruest :hatUnterkategorie :Gestrahlt .
+
+:Geschliffen rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "geschliffen"@de ;
+    :ebene 12 .
+
+:StandardGeruest :hatUnterkategorie :Geschliffen .
+:SpeziellesGeruest :hatUnterkategorie :Geschliffen .
+
+:Gegrindet rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "gegrindet"@de ;
+    :ebene 12 .
+
+:StandardGeruest :hatUnterkategorie :Gegrindet .
+:SpeziellesGeruest :hatUnterkategorie :Gegrindet .
+
+#################################################################
+#    Betonbeläge
+#################################################################
+
+:Einschichtig rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "einschichtig"@de ;
+    :ebene 4 .
+
+:Betonbelaege :hatUnterkategorie :Einschichtig .
+
+:Zweischichtig rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "zweischichtig"@de ;
+    :ebene 4 .
+
+:Betonbelaege :hatUnterkategorie :Zweischichtig .
+
+:BetonVerkehrslastT1 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T1"@de ;
+    :ebene 5 .
+
+:Einschichtig :hatUnterkategorie :BetonVerkehrslastT1 .
+
+:BetonVerkehrslastT2 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T2"@de ;
+    :ebene 5 .
+
+:Einschichtig :hatUnterkategorie :BetonVerkehrslastT2 .
+
+:BetonVerkehrslastT3 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T3"@de ;
+    :ebene 5 .
+
+:Einschichtig :hatUnterkategorie :BetonVerkehrslastT3 .
+
+:BetonVerkehrslastT4 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T4"@de ;
+    :ebene 5 .
+
+:Einschichtig :hatUnterkategorie :BetonVerkehrslastT4 .
+
+:Beton_0_8 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "0/8"@de ;
+    :ebene 6 .
+
+:BetonVerkehrslastT1 :hatUnterkategorie :Beton_0_8 .
+
+:Beton_0_16 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "0/16"@de ;
+    :ebene 6 .
+
+:BetonVerkehrslastT1 :hatUnterkategorie :Beton_0_16 .
+
+:Beton_0_32 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "0/32"@de ;
+    :ebene 6 .
+
+:BetonVerkehrslastT1 :hatUnterkategorie :Beton_0_32 .
+
+:BetonGeschliffen rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "geschliffen"@de ;
+    :ebene 7 .
+
+:Beton_0_8 :hatUnterkategorie :BetonGeschliffen .
+
+:BetonBesenstrich rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "besenstrich"@de ;
+    :ebene 7 .
+
+:Beton_0_8 :hatUnterkategorie :BetonBesenstrich .
+
+:BetonGestrahlt rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "gestrahlt"@de ;
+    :ebene 7 .
+
+:Beton_0_8 :hatUnterkategorie :BetonGestrahlt .
+
+:Hartbeton rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Hartbeton"@de ;
+    :ebene 5 .
+
+:Zweischichtig :hatUnterkategorie :Hartbeton .
+
+:HartbetonT1 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T1"@de ;
+    :ebene 6 .
+
+:Hartbeton :hatUnterkategorie :HartbetonT1 .
+
+:Hartbeton_0_2 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "0/2"@de ;
+    :ebene 7 .
+
+:HartbetonT1 :hatUnterkategorie :Hartbeton_0_2 .
+
+:HartbetonStandard rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Standard"@de ;
+    :ebene 8 .
+
+:Hartbeton_0_2 :hatUnterkategorie :HartbetonStandard .
+
+:BesondereKoernungen rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "besondere Körnungen"@de ;
+    :ebene 8 .
+
+:Hartbeton_0_2 :hatUnterkategorie :BesondereKoernungen .
+
+:HartbetonGeschliffen rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "geschliffen"@de ;
+    :ebene 9 .
+
+:HartbetonStandard :hatUnterkategorie :HartbetonGeschliffen .
+:BesondereKoernungen :hatUnterkategorie :HartbetonGeschliffen .
+
+:HartbetonBesenstrich rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "besenstrich"@de ;
+    :ebene 9 .
+
+:HartbetonStandard :hatUnterkategorie :HartbetonBesenstrich .
+:BesondereKoernungen :hatUnterkategorie :HartbetonBesenstrich .
+
+:HartbetonGestrahlt rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "gestrahlt"@de ;
+    :ebene 9 .
+
+:HartbetonStandard :hatUnterkategorie :HartbetonGestrahlt .
+:BesondereKoernungen :hatUnterkategorie :HartbetonGestrahlt .
+
+:Abgesaeuert rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "abgesäuert"@de ;
+    :ebene 10 .
+
+:HartbetonGeschliffen :hatUnterkategorie :Abgesaeuert .
+
+:Versiegelung rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "Versiegelung"@de ;
+    :ebene 10 .
+
+:HartbetonGeschliffen :hatUnterkategorie :Versiegelung .
+
+#################################################################
+#    Plattenbeläge
+#################################################################
+
+:Natursteinplatten rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Natursteinplatten"@de ;
+    :ebene 4 .
+
+:Plattenbelaege :hatUnterkategorie :Natursteinplatten .
+
+:Betonplatten rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Betonplatten"@de ;
+    :ebene 4 .
+
+:Plattenbelaege :hatUnterkategorie :Betonplatten .
+
+:UngebundenePlattenBauweise rdf:type owl:NamedIndividual , :Bauweise ;
+    :bezeichnung "Ungebundene Bauweise"@de ;
+    :ebene 5 .
+
+:Natursteinplatten :hatUnterkategorie :UngebundenePlattenBauweise .
+:Betonplatten :hatUnterkategorie :UngebundenePlattenBauweise .
+
+:GebundenePlattenBauweise rdf:type owl:NamedIndividual , :Bauweise ;
+    :bezeichnung "Gebundene Bauweise"@de ;
+    :ebene 5 .
+
+:Natursteinplatten :hatUnterkategorie :GebundenePlattenBauweise .
+:Betonplatten :hatUnterkategorie :GebundenePlattenBauweise .
+
+:MischbauweisePlatten rdf:type owl:NamedIndividual , :Bauweise ;
+    :bezeichnung "Mischbauweise"@de ;
+    :ebene 5 .
+
+:Betonplatten :hatUnterkategorie :MischbauweisePlatten .
+
+:PlattenVerkehrZP rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse ZP"@de ;
+    :ebene 6 .
+
+:UngebundenePlattenBauweise :hatUnterkategorie :PlattenVerkehrZP .
+
+:RechteckigePlatten rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "rechteckige Platten"@de ;
+    :ebene 7 .
+
+:PlattenVerkehrZP :hatUnterkategorie :RechteckigePlatten .
+
+:Gneiss rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Gneiss"@de ;
+    :ebene 8 .
+
+:RechteckigePlatten :hatUnterkategorie :Gneiss .
+
+:Granit rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Granit"@de ;
+    :ebene 8 .
+
+:RechteckigePlatten :hatUnterkategorie :Granit .
+
+:Quarzsandstein rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Quarzsandstein"@de ;
+    :ebene 8 .
+
+:RechteckigePlatten :hatUnterkategorie :Quarzsandstein .
+
+:Porphyr rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Porphyr"@de ;
+    :ebene 8 .
+
+:RechteckigePlatten :hatUnterkategorie :Porphyr .
+
+:Basalt rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Basalt"@de ;
+    :ebene 8 .
+
+:RechteckigePlatten :hatUnterkategorie :Basalt .
+
+:AllseitigBruchrau rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "allseitig bruchrau"@de ;
+    :ebene 9 .
+
+:Gneiss :hatUnterkategorie :AllseitigBruchrau .
+:Granit :hatUnterkategorie :AllseitigBruchrau .
+:Quarzsandstein :hatUnterkategorie :AllseitigBruchrau .
+:Porphyr :hatUnterkategorie :AllseitigBruchrau .
+:Basalt :hatUnterkategorie :AllseitigBruchrau .
+
+:OberseiteBruchRestGesaegt rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "Oberseite bruchrau, Rest gesägt"@de ;
+    :ebene 9 .
+
+:Gneiss :hatUnterkategorie :OberseiteBruchRestGesaegt .
+:Granit :hatUnterkategorie :OberseiteBruchRestGesaegt .
+:Quarzsandstein :hatUnterkategorie :OberseiteBruchRestGesaegt .
+:Porphyr :hatUnterkategorie :OberseiteBruchRestGesaegt .
+:Basalt :hatUnterkategorie :OberseiteBruchRestGesaegt .
+
+:OberseiteGesaegtAufgeraut rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "Oberseite gesägt und aufgeraut, Rest gesägt"@de ;
+    :ebene 9 .
+
+:Gneiss :hatUnterkategorie :OberseiteGesaegtAufgeraut .
+:Granit :hatUnterkategorie :OberseiteGesaegtAufgeraut .
+:Quarzsandstein :hatUnterkategorie :OberseiteGesaegtAufgeraut .
+:Porphyr :hatUnterkategorie :OberseiteGesaegtAufgeraut .
+:Basalt :hatUnterkategorie :OberseiteGesaegtAufgeraut .
+
+:FormatPlatten rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Format"@de ;
+    :ebene 10 .
+
+:AllseitigBruchrau :hatUnterkategorie :FormatPlatten .
+:OberseiteBruchRestGesaegt :hatUnterkategorie :FormatPlatten .
+
+:Geflammt rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "geflammt"@de ;
+    :ebene 10 .
+
+:OberseiteGesaegtAufgeraut :hatUnterkategorie :Geflammt .
+
+:Gestockt rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "gestockt"@de ;
+    :ebene 10 .
+
+:OberseiteGesaegtAufgeraut :hatUnterkategorie :Gestockt .
+
+:GeschliffenPlatten rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "geschliffen"@de ;
+    :ebene 10 .
+
+:OberseiteGesaegtAufgeraut :hatUnterkategorie :GeschliffenPlatten .
+
+:Schariert rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "schariert"@de ;
+    :ebene 10 .
+
+:OberseiteGesaegtAufgeraut :hatUnterkategorie :Schariert .
+
+:Scharfkantig rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "scharfkantig"@de ;
+    :ebene 11 .
+
+:FormatPlatten :hatUnterkategorie :Scharfkantig .
+:Geflammt :hatUnterkategorie :Scharfkantig .
+:Gestockt :hatUnterkategorie :Scharfkantig .
+:GeschliffenPlatten :hatUnterkategorie :Scharfkantig .
+:Schariert :hatUnterkategorie :Scharfkantig .
+
+:KantenGebrochen rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Kanten gebrochen"@de ;
+    :ebene 11 .
+
+:FormatPlatten :hatUnterkategorie :KantenGebrochen .
+
+:KantenGefast rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Kanten gefast"@de ;
+    :ebene 11 .
+
+:FormatPlatten :hatUnterkategorie :KantenGefast .
+
+:NeueSteine rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "neue Steine"@de ;
+    :ebene 12 .
+
+:Scharfkantig :hatUnterkategorie :NeueSteine .
+:KantenGebrochen :hatUnterkategorie :NeueSteine .
+:KantenGefast :hatUnterkategorie :NeueSteine .
+
+:GebrauchteSteine rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "gebrauchte Steine"@de ;
+    :ebene 12 .
+
+:Scharfkantig :hatUnterkategorie :GebrauchteSteine .
+:KantenGebrochen :hatUnterkategorie :GebrauchteSteine .
+:KantenGefast :hatUnterkategorie :GebrauchteSteine .
+
+:WasserundurchlaessigePlatten rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "wasserundurchlässige Platten"@de ;
+    :ebene 8 .
+
+:WasserdurchlaessigePlatten rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "wasserdurchlässige Platten"@de ;
+    :ebene 8 .
+
+:BetonplattenProdukt rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Produkt"@de ;
+    :ebene 9 .
+
+:WasserundurchlaessigePlatten :hatUnterkategorie :BetonplattenProdukt .
+
+:BetonplattenFormat rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Format"@de ;
+    :ebene 10 .
+
+:BetonplattenProdukt :hatUnterkategorie :BetonplattenFormat .
+
+#################################################################
+#    Pflasterbeläge - Naturstein
+#################################################################
+
+:Natursteinpflaesterungen rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Natursteinpflästerungen"@de ;
+    :ebene 4 .
+
+:Pflasterbelaege :hatUnterkategorie :Natursteinpflaesterungen .
+
+:Kunststeinpflaesterungen rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Kunststeinpflästerungen"@de ;
+    :ebene 4 .
+
+:Pflasterbelaege :hatUnterkategorie :Kunststeinpflaesterungen .
+
+:UngebundenePflasterBauweise rdf:type owl:NamedIndividual , :Bauweise ;
+    :bezeichnung "Ungebundene Bauweise"@de ;
+    :ebene 5 .
+
+:Natursteinpflaesterungen :hatUnterkategorie :UngebundenePflasterBauweise .
+:Kunststeinpflaesterungen :hatUnterkategorie :UngebundenePflasterBauweise .
+
+:MischbauweisePflaster rdf:type owl:NamedIndividual , :Bauweise ;
+    :bezeichnung "Mischbauweise"@de ;
+    :ebene 5 .
+
+:Natursteinpflaesterungen :hatUnterkategorie :MischbauweisePflaster .
+
+:GebundenePflasterBauweise rdf:type owl:NamedIndividual , :Bauweise ;
+    :bezeichnung "Gebundene Bauweise"@de ;
+    :ebene 5 .
+
+:Natursteinpflaesterungen :hatUnterkategorie :GebundenePflasterBauweise .
+
+:Bogenpflaesterung rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Bogenpflästerung"@de ;
+    :ebene 6 .
+
+:UngebundenePflasterBauweise :hatUnterkategorie :Bogenpflaesterung .
+
+:Reihenpflaesterung rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Reihenpflästerung"@de ;
+    :ebene 6 .
+
+:UngebundenePflasterBauweise :hatUnterkategorie :Reihenpflaesterung .
+
+:Kreispflaesterung rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Kreispflästerung"@de ;
+    :ebene 6 .
+
+:UngebundenePflasterBauweise :hatUnterkategorie :Kreispflaesterung .
+
+:Fischgraetpflaesterung rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Fischgrätpflästerung"@de ;
+    :ebene 6 .
+
+:UngebundenePflasterBauweise :hatUnterkategorie :Fischgraetpflaesterung .
+
+:Wildpflaesterung rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Wildpflästerung"@de ;
+    :ebene 6 .
+
+:UngebundenePflasterBauweise :hatUnterkategorie :Wildpflaesterung .
+
+:Schuppenpflaesterung rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Schuppenpflästerung"@de ;
+    :ebene 6 .
+
+:UngebundenePflasterBauweise :hatUnterkategorie :Schuppenpflaesterung .
+
+:Ornamentpflaesterung rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "Ornamentpflästerung"@de ;
+    :ebene 6 .
+
+:UngebundenePflasterBauweise :hatUnterkategorie :Ornamentpflaesterung .
+
+:PflasterVerkehrZP rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse ZP"@de ;
+    :ebene 7 .
+
+:Bogenpflaesterung :hatUnterkategorie :PflasterVerkehrZP .
+
+:PflasterVerkehrTL rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse TL"@de ;
+    :ebene 7 .
+
+:Bogenpflaesterung :hatUnterkategorie :PflasterVerkehrTL .
+
+:PflasterVerkehrT1 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T1"@de ;
+    :ebene 7 .
+
+:Bogenpflaesterung :hatUnterkategorie :PflasterVerkehrT1 .
+
+:PflasterVerkehrT2 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T2"@de ;
+    :ebene 7 .
+
+:Bogenpflaesterung :hatUnterkategorie :PflasterVerkehrT2 .
+
+:PflasterVerkehrT3 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T3"@de ;
+    :ebene 7 .
+
+:Bogenpflaesterung :hatUnterkategorie :PflasterVerkehrT3 .
+
+:PflasterVerkehrT4 rdf:type owl:NamedIndividual , :Verkehrslastklasse ;
+    :bezeichnung "Verkehrslastklasse T4"@de ;
+    :ebene 7 .
+
+:Bogenpflaesterung :hatUnterkategorie :PflasterVerkehrT4 .
+
+:PflastersteinTyp6_8 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "Pflasterstein Typ 6/8"@de ;
+    :ebene 8 .
+
+:PflasterVerkehrZP :hatUnterkategorie :PflastersteinTyp6_8 .
+:PflasterVerkehrTL :hatUnterkategorie :PflastersteinTyp6_8 .
+:PflasterVerkehrT1 :hatUnterkategorie :PflastersteinTyp6_8 .
+
+:PflastersteinTyp8_11 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "Pflasterstein Typ 8/11"@de ;
+    :ebene 8 .
+
+:PflasterVerkehrZP :hatUnterkategorie :PflastersteinTyp8_11 .
+:PflasterVerkehrTL :hatUnterkategorie :PflastersteinTyp8_11 .
+:PflasterVerkehrT1 :hatUnterkategorie :PflastersteinTyp8_11 .
+:PflasterVerkehrT2 :hatUnterkategorie :PflastersteinTyp8_11 .
+:PflasterVerkehrT3 :hatUnterkategorie :PflastersteinTyp8_11 .
+
+:PflastersteinTyp11_13 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "Pflasterstein Typ 11/13"@de ;
+    :ebene 8 .
+
+:PflasterVerkehrZP :hatUnterkategorie :PflastersteinTyp11_13 .
+:PflasterVerkehrTL :hatUnterkategorie :PflastersteinTyp11_13 .
+:PflasterVerkehrT1 :hatUnterkategorie :PflastersteinTyp11_13 .
+:PflasterVerkehrT2 :hatUnterkategorie :PflastersteinTyp11_13 .
+:PflasterVerkehrT3 :hatUnterkategorie :PflastersteinTyp11_13 .
+
+:PflastersteinTyp14_16 rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "Pflasterstein Typ 14/16"@de ;
+    :ebene 8 .
+
+:PflasterVerkehrT2 :hatUnterkategorie :PflastersteinTyp14_16 .
+:PflasterVerkehrT3 :hatUnterkategorie :PflastersteinTyp14_16 .
+:PflasterVerkehrT4 :hatUnterkategorie :PflastersteinTyp14_16 .
+
+:Flusswackenstein rdf:type owl:NamedIndividual , :Produkt ;
+    :bezeichnung "Flusswackenstein"@de ;
+    :ebene 8 .
+
+:PflasterVerkehrZP :hatUnterkategorie :Flusswackenstein .
+:PflasterVerkehrTL :hatUnterkategorie :Flusswackenstein .
+:PflasterVerkehrT1 :hatUnterkategorie :Flusswackenstein .
+
+:PflasterGneiss rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Gneiss"@de ;
+    :ebene 9 .
+
+:PflastersteinTyp6_8 :hatUnterkategorie :PflasterGneiss .
+
+:PflasterGranit rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Granit"@de ;
+    :ebene 9 .
+
+:PflastersteinTyp6_8 :hatUnterkategorie :PflasterGranit .
+
+:PflasterQuarzsandstein rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Quarzsandstein"@de ;
+    :ebene 9 .
+
+:PflastersteinTyp6_8 :hatUnterkategorie :PflasterQuarzsandstein .
+
+:PflasterPorphyr rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Porphyr"@de ;
+    :ebene 9 .
+
+:PflastersteinTyp6_8 :hatUnterkategorie :PflasterPorphyr .
+
+:PflasterBasalt rdf:type owl:NamedIndividual , :Material ;
+    :bezeichnung "Basalt"@de ;
+    :ebene 9 .
+
+:PflastersteinTyp6_8 :hatUnterkategorie :PflasterBasalt .
+
+:PflasterAllseitigBruchrau rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "allseitig bruchrau"@de ;
+    :ebene 10 .
+
+:PflasterGneiss :hatUnterkategorie :PflasterAllseitigBruchrau .
+:PflasterGranit :hatUnterkategorie :PflasterAllseitigBruchrau .
+:PflasterQuarzsandstein :hatUnterkategorie :PflasterAllseitigBruchrau .
+:PflasterPorphyr :hatUnterkategorie :PflasterAllseitigBruchrau .
+:PflasterBasalt :hatUnterkategorie :PflasterAllseitigBruchrau .
+
+:PflasterOberseiteBruchRestGesaegt rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "Oberseite bruchrau, Rest gesägt"@de ;
+    :ebene 10 .
+
+:PflasterGneiss :hatUnterkategorie :PflasterOberseiteBruchRestGesaegt .
+:PflasterGranit :hatUnterkategorie :PflasterOberseiteBruchRestGesaegt .
+:PflasterQuarzsandstein :hatUnterkategorie :PflasterOberseiteBruchRestGesaegt .
+:PflasterPorphyr :hatUnterkategorie :PflasterOberseiteBruchRestGesaegt .
+:PflasterBasalt :hatUnterkategorie :PflasterOberseiteBruchRestGesaegt .
+
+:PflasterOberseiteGesaegtAufgeraut rdf:type owl:NamedIndividual , :Oberflaechenbearbeitung ;
+    :bezeichnung "Oberseite gesägt und aufgeraut, Rest gesägt"@de ;
+    :ebene 10 .
+
+:PflasterGneiss :hatUnterkategorie :PflasterOberseiteGesaegtAufgeraut .
+:PflasterGranit :hatUnterkategorie :PflasterOberseiteGesaegtAufgeraut .
+:PflasterQuarzsandstein :hatUnterkategorie :PflasterOberseiteGesaegtAufgeraut .
+:PflasterPorphyr :hatUnterkategorie :PflasterOberseiteGesaegtAufgeraut .
+:PflasterBasalt :hatUnterkategorie :PflasterOberseiteGesaegtAufgeraut .
+
+:PflasterNeueSteine rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "neue Steine"@de ;
+    :ebene 11 .
+
+:PflasterAllseitigBruchrau :hatUnterkategorie :PflasterNeueSteine .
+:PflasterOberseiteBruchRestGesaegt :hatUnterkategorie :PflasterNeueSteine .
+:PflasterOberseiteGesaegtAufgeraut :hatUnterkategorie :PflasterNeueSteine .
+
+:PflasterGebrauchteSteine rdf:type owl:NamedIndividual , :Kategorie ;
+    :bezeichnung "gebrauchte Steine"@de ;
+    :ebene 11 .
+
+:PflasterAllseitigBruchrau :hatUnterkategorie :PflasterGebrauchteSteine .
+:PflasterOberseiteBruchRestGesaegt :hatUnterkategorie :PflasterGebrauchteSteine .
+:PflasterOberseiteGesaegtAufgeraut :hatUnterkategorie :PflasterGebrauchteSteine .
+
+:

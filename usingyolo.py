@@ -1,3 +1,4 @@
+# kann man löschen
 # usingyolobasics.py
 from ultralytics import YOLO
 import cv2

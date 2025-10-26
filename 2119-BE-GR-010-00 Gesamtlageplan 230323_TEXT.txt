@@ -1,0 +1,2128 @@
+--- Seite 1 ---
+Schule Friesenberg
+berger-Weg
+Im Rossweidli
+Im Rossweidli
+Borrweg
+"Verlängerung Georg-Baumberger-Weg"
+OK Decke
+476,33
+OK Decke
+476,33
+OK Decke
+478,63
+OK Decke
+478,63
+OK Decke
+478.88
+OK Decke
+479,00
+OK Decke
+484.70
+OK Decke
+484.95
+OK Decke
+484.70
+Lage nicht exakt
+Lage nicht exakt
+Indianerleiter
+Speier als 
+Notentwässerung!
+Kastenrinne 
+nicht Bauteil Umgebung
+Lage und Breite schematisch
+1.60x2.70
+1
+11
+16
+25
+12
+26
+24
+23
+10
+15
+So.to
+So.do
+So.ar
+So.ar
+So.ar
+So.to
+So.ar
+So.ar
+So.do
+So.do
+So.to
+So.do
+So.do
+So.to
+So.to
+So.do
+Ul. RE
+Ti. co Gr
+So.to
+Co. sa
+Co. fl
+Co.ma
+Co. sa
+Co. sa
+Co. sa
+Co. fl
+Co.ma
+Co. fl
+Ro.gl
+Ro.gl
+Ro.gl
+Ro.gl
+Ro.gl
+Ro.gl
+Fr.an Ray
+Fr.or
+Ma.Ru
+Ma.Ru
+Ma.Ru
+Ma.Ru
+Ma.Ru
+Ma.Ru
+Ma.Ru
+Ma.Ru
+Am.la
+Ma. BU
+Ma. BU
+Am.la
+Ma. BU
+Ma. BU
+Ma. BU
+Ma. BU
+Am.la
+Am.la
+Ma. BU
+Ma. BU
+Am.la
+Am.la
+Fr.or
+Fr.or
+Fr.or
+Fr.or
+Fr.or
+Ti. co Gr
+Ti. co Gr
+Ac. pseu.
+Fr.or
+Am.la
+Am.la
+Am.la
+Am.ov
+Am.ov
+Am.ov
+Am.ov
+Am.ov
+Ma. BU
+Al.gl
+Ac. pseu.
+Pr.pa
+Pr.pa
+Pr.pa
+Pr.pa
+Pr.pa
+Pr.pa
+Fr.an Ray
+Fr.an Ray
+Pr.pa
+Os.ca
+Os.ca
+Os.ca
+Co.av
+Co.av
+Co.av
+So.au
+So.au
+So.au
+So.au
+So.au
+Co.av
+Vi.la
+Vi.la
+Vi.la
+Al.gl
+Al.gl
+Al.gl
+Al.gl
+Ac. pseu.
+Ul. RE
+Ti. co Gr
+Am.ov
+Am.ov
+Am.ov
+Am.ov
+Am.ov
+Am.ov
+Am.ov
+Sy. vu
+Sy. vu
+Sy. vu
+Sy. vu
+Sy. vu
+Co. ma
+Co.ma
+Co.ma
+Co.ma
+Co.ma
+Co.ma
+Co.ma
+Co.ma
+Co.ma
+Co.ma
+Co.ma
+Co.ma
+Co.ma
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Co.av
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+Sa.pu
+So.au `F`
+So.au `F`
+So.au
+Pr.pa
+So.au
+So.au
+So.au `F`
+Am.ov
+Am.ov
+Am.ov
+479.68
+479.52
+3.1%
+480.51
+480.56
+2.5%
+479.98
+479.98
+0.0%
+479.98
+479.98
+0.0%
+479.98
+0.0%
+479.98
+479.98
+0.0%
+480.445
+2.5%
+479.915
+2.5%
+479.915
+479.81
+3.0%
+2.5%
+479.915
+479.81
+3.0%
+2.5%
+479.65
+479.58
+2.5%
+478.81
+478.7
+10.7%
+480.19
+480.388
+10.8%
+479.53
+10.6%
+479.31
+11.3%
+4.9%
+479.28
+7.0%
+479.2
+479.105
+3.5%
+3.0%
+479.03
+7.6%
+479.17
+0.8%
+1.8%
+479.715
+2.5%
+2.9%
+479.75
+0.5%
+479.405
+2.5%
+479.915
+2.5%
+479.2
+479.16
+2.0%
+479.695
+4.6%
+479.84
+4.6%
+2.4%
+479.76
+2.6%
+479.148
+479.245
+4.8%
+1.8%
+4.8%
+479.76
+0.0%
+479.84
+2.5%
+479.84
+2.5%
+479.915
+2.4%
+0.0%
+479.162
+479.165
+0.1%
+479.154
+0.1%
+479.145
+0.1%
+479.915
+2.5%
+479.28
+2.5%
+479.64
+3.9%
+5.5%
+479.42
+5.2%
+479.78
+3.9%
+479.906
+2.5%
+2.5%
+2.5%
+479.125
+0.1%
+0.5%
+479.153
+0.4%
+480.51
+480.675
+8.3%
+480.675
+480.84
+9.1%
+480.84
+481.005
+9.2%
+1.8%
+480.495
+2.5%
+8.7%
+8.7%
+2.5%
+2.5%
+479.815
+2.5%
+479.69
+2.5%
+479.75
+0.5%
+479.88
+2.6%
+0.4%
+479.665
+479.54
+2.5%
+479.6
+479.47
+2.6%
+1.7%
+0.5%
+1.7%
+1.7%
+1.7%
+479.605
+0.5%
+479.598
+0.5%
+0.4%
+479.53
+2.9%
+479.45
+3.0%
+0.0%
+478.37
+478.01
+8.0%
+478.55
+478.4
+2.5%
+478.28
+2.2%
+478.2
+5.2%
+478.15
+3.8%
+478.15
+14.7%
+0.0%
+10.1%
+11.0%
+11.2%
+478.73
+4.0%
+478.318
+2.6%
+479.27
+2.0%
+480.27
+6.0%
+abs. Anschlusshöhen Strasse
+zu definieren im Zuge TAZ- Ausführungsprojekt
+480.025
+2.5%
+480
+480
+0.0%
+479.97
+2.5%
+479.94
+0.7%
+479.97
+0.7%
+479.98
+0.6%
+479.95
+2.5%
+2.5%
+2.5%
+3.2%
+479.97
+1.0%
+1.2%
+2.5%
+480.35
+2.3%
+480,75
+480,50
+480,00
+479,75
+479,50
+479,25
+479,25
+479,00
+479,50
+479,75
+479.7
+479.55
+3.8%
+479.5
+479.35
+3.8%
+10.0%
+10.0%
+480.6
+480.6
+0.0%
+480.5
+480.5
+0.0%
+480.6
+480.6
+0.0%
+7.8%
+0.0%
+480.5
+0.0%
+483.65
+483.65
+0.0%
+483.51
+483.51
+0.0%
+0.0%
+0.0%
+483.51
+2.6%
+483.65
+0.0%
+483.65
+483.585
+2.6%
+483.65
+0.0%
+483.51
+483.51
+0.0%
+483.65
+483.65
+0.0%
+483.56
+3.0%
+483.65
+2.6%
+483.65
+483.51
+2.6%
+483.65
+0.0%
+0.0%
+2.6%
+483.65
+483.65
+0.0%
+483.65
+483.65
+0.0%
+0.0%
+483.65
+483.65
+0.0%
+0.0%
+483.65
+483.65
+0.0%
+483.65
+0.0%
+483.65
+0.0%
+0.0%
+483.51
+483.51
+0.0%
+483.595
+483.58
+0.3%
+483.615
+0.3%
+483.77
+1.3%
+483.64
+483.65
+0.4%
+0.3%
+483.58
+0.0%
+483.51
+3.3%
+483.77
+1.3%
+483.51
+2.4%
+483.77
+1.0%
+1.6%
+4.2%
+483.51
+3.5%
+3.3%
+483.51
+483.51
+0.0%
+0.0%
+483.65
+0.0%
+483.65
+0.0%
+0.0%
+2.6%
+483.63
+483.63
+0.0%
+483.63
+0.0%
+483.63
+0.0%
+483.63
+0.0%
+0.0%
+483.63
+0.0%
+483.63
+0.0%
+483.63
+0.0%
+483.63
+0.0%
+483.545
+0.5%
+483.59
+0.5%
+483.58
+2.5%
+2.5%
+483.58
+0.9%
+2.5%
+483.58
+0.0%
+0.0%
+483.55
+483.51
+1.8%
+1.7%
+483.04
+483.04
+0.0%
+482.93
+2.5%
+482.98
+2.0%
+483.52
+483.53
+0.5%
+483.577
+483.6
+1.2%
+1.6%
+483.47
+5.4%
+483.26
+2.2%
+483.26
+483.12
+1.5%
+2.1%
+483.64
+0.3%
+0.3%
+483.51
+0.0%
+483.51
+0.0%
+0.0%
+483.51
+0.0%
+0.0%
+483.6
+0.8%
+483.58
+0.7%
+483.35
+2.4%
+4.7%
+2.4%
+483.52
+483.63
+2.6%
+4.1%
+483.22
+483.58
+8.0%
+483.36
+483.49
+2.7%
+483.66
+483.64
+1.1%
+3.8%
+483.31
+2.0%
+483.535
+2.3%
+2.4%
+483.535
+483.585
+2.5%
+483.535
+0.0%
+0.0%
+483.645
+483.64
+0.1%
+483.65
+0.1%
+2.4%
+483.585
+0.0%
+483.585
+0.0%
+483.585
+0.0%
+0.0%
+483.555
+0.2%
+483.551
+483.555
+0.1%
+483.545
+0.1%
+483.54
+0.1%
+483.535
+0.2%
+0.0%
+483.49
+0.0%
+2.4%
+483.425
+2.7%
+483.45
+0.1%
+483.51
+2.5%
+0.0%
+2.4%
+483.57
+0.4%
+0.3%
+1.8%
+3.3%
+483.43
+3.0%
+3.3%
+483.41
+2.0%
+3.4%
+2.7%
+2.5%
+481
+10.7%
+480.975
+1.0%
+480.953
+1.0%
+483.262
+2.1%
+2.1%
+481.03
+3.7%
+483.65
+1.6%
+7.6%
+2.0%
+483.75
+3.7%
+483.72
+2.2%
+483.63
+2.2%
+483.72
+483.63
+2.8%
+483.72
+483.63
+2.8%
+482.87
+2.6%
+7.3%
+483.425
+2.4%
+483.215
+2.5%
+3.4%
+482.956
+4.3%
+483.127
+3.2%
+2.9%
+4.2%
+3.1%
+4.3%
+1.9%
+1.9%
+483.043
+1.9%
+1.9%
+483.63
+0.0%
+0.0%
+2.6%
+483.45
+3.7%
+483.265
+2.2%
+2.2%
+6.4%
+483.45
+0.9%
+483.485
+1.8%
+1.5%
+0.5%
+3.7%
+2.8%
+3.5%
+2.3%
+483.51
+483.58
+3.5%
+2.5%
+483.59
+0.3%
+483.62
+0.3%
+1.7%
+483.63
+0.3%
+0.3%
+2.5%
+5.6%
+2.0%
+483.51
+2.0%
+483.44
+4.8%
+0.6%
+0.6%
+3.5%
+483.48
+2.8%
+483.48
+2.8%
+2.5%
+483.48
+1.8%
+483.48
+2.2%
+1.0%
+2.5%
+483.495
+483.58
+4.3%
+483.52
+0.5%
+483.495
+3.2%
+483.52
+483.58
+3.1%
+483.52
+483.63
+2.6%
+3.0%
+3.1%
+483.59
+2.4%
+0.5%
+abs. Anschlusshöhen Strasse
+zu definieren im Zuge TAZ- Ausführungsprojekt
+478,75
+483,50
+483,25
+483,00
+482,75
+482,50
+482,25
+482,00
+481,75
+481,50
+481,25
+483.49
+3.7%
+483.47
+3.9%
+483.605
+483.625
+483.605
+483.625
+483.47
+483.49
+3.5%
+485.54
+485.425
+2.4%
+485.48
+485.48
+0.0%
+487.57
+487.57
+0.0%
+487.91
+487.91
+0.0%
+485.42
+485.42
+0.0%
+485.42
+0.0%
+2.4%
+0.0%
+485.48
+2.4%
+485.48
+0.0%
+485.48
+485.48
+0.0%
+485.48
+0.0%
+485.42
+485.42
+0.0%
+2.4%
+485.676
+486.84
+9.4%
+484.69
+485.152
+9.8%
+485.42
+2.4%
+485.41
+0.4%
+485.41
+0.0%
+487.53
+3.8%
+487.94
+487.67
+1.2%
+486.93
+4.4%
+487
+487.05
+2.0%
+487.41
+9.0%
+487.55
+0.7%
+485.45
+0.9%
+485.5
+2.4%
+485.37
+2.5%
+2.4%
+485.42
+2.4%
+485.42
+0.0%
+486.225
+2.3%
+486.035
+5.9%
+486.08
+2.3%
+485.675
+485.725
+4.4%
+486.175
+486.23
+2.7%
+486.3
+3.3%
+486.35
+4.4%
+486.4
+3.8%
+486.48
+3.9%
+486.52
+2.0%
+1.4%
+486.58
+0.0%
+486.56
+0.5%
+486.56
+0.0%
+486.54
+0.8%
+485.48
+0.0%
+485.425
+0.0%
+485.54
+485.58
+1.9%
+2.0%
+485.67
+2.5%
+485.725
+3.7%
+485.845
+5.9%
+485.965
+6.0%
+5.7%
+5.9%
+485.92
+6.0%
+2.1%
+485.815
+5.6%
+1.1%
+5.3%
+0.0%
+485.615
+4.0%
+485.425
+2.5%
+485.62
+485.425
+3.0%
+485.425
+3.3%
+485.425
+3.6%
+486.3
+2.4%
+486.42
+3.0%
+486.46
+2.0%
+486.5
+2.0%
+486.56
+3.0%
+486.6
+2.0%
+486.6
+0.0%
+486.6
+0.0%
+486.6
+0.0%
+486.62
+1.0%
+486.66
+1.7%
+485.545
+2.6%
+486.7
+2.6%
+485.545
+0.2%
+485.48
+2.7%
+485.54
+485.54
+0.0%
+0.0%
+486.54
+486.49
+1.9%
+2.8%
+486.48
+3.0%
+486.47
+3.7%
+2.3%
+2.3%
+1.9%
+2.6%
+1.8%
+486.46
+486.46
+0.0%
+486.46
+0.0%
+486.46
+0.0%
+486.46
+0.0%
+486.46
+0.0%
+486.7
+486.64
+4.3%
+0.7%
+486.53
+2.1%
+3.6%
+0.2%
+0.3%
+486.58
+3.6%
+486.58
+3.6%
+2.5%
+486.58
+3.3%
+486.58
+2.7%
+2.7%
+2.4%
+2.8%
+1.5%
+486.49
+1.4%
+486.6
+2.5%
+486.58
+0.0%
+0.0%
+0.0%
+0.0%
+0.5%
+0.5%
+2.2%
+488.131
+488.142
+0.4%
+488.116
+0.5%
+488.16
+5.0%
+488.16
+1.9%
+488.48
+488.46
+2.3%
+486.54
+1.8%
+485.545
+485.48
+2.6%
+485.545
+0.0%
+485.545
+0.0%
+0.0%
+485.48
+485.48
+0.0%
+0.0%
+2.8%
+485.545
+0.0%
+485.545
+0.0%
+485.545
+0.0%
+485.48
+2.8%
+485.545
+0.0%
+0.0%
+485.545
+0.0%
+485.545
+0.0%
+0.0%
+485.675
+1.0%
+485.675
+0.0%
+1.0%
+1.0%
+1.0%
+1.0%
+1.0%
+485.41
+1.7%
+485.44
+1.0%
+1.5%
+485.48
+0.0%
+485.48
+0.0%
+485.48
+0.0%
+488.194
+0.4%
+488.62
+1.1%
+485.36
+0.5%
+485.46
+485.52
+3.0%
+485.47
+485.565
+3.1%
+485.35
+0.5%
+485.34
+0.5%
+485.4
+1.9%
+1.9%
+485.46
+485.41
+2.0%
+0.0%
+485.46
+0.4%
+485.53
+3.3%
+485.53
+2.2%
+2.2%
+485.68
+485.73
+2.0%
+485.42
+4.5%
+0.1%
+6.3%
+2.0%
+4.5%
+487
+10.6%
+483.65
+11.6%
+485.33
+0.5%
+485.32
+0.5%
+485.72
+485.78
+2.4%
+4.5%
+485.65
+485.7
+2.0%
+485.61
+4.5%
+4.0%
+2.5%
+485.38
+3.0%
+3.7%
+3.9%
+485.47
+3.2%
+485.56
+3.9%
+485.27
+2.4%
+3.1%
+3.2%
+2.0%
+3.3%
+2.2%
+485.27
+485.42
+3.9%
+485.42
+3.0%
+2.5%
+2.7%
+0.7%
+1.9%
+4.5%
+487.05
+10.6%
+483.7
+11.8%
+9.0%
+486.54
+2.6%
+0.2%
+4.5%
+0.5%
+485.4
+5.1%
+485.47
+3.8%
+2.0%
+2.0%
+485.4
+2.0%
+3.0%
+1.4%
+3.3%
+2.6%
+487.36
+2.6%
+487.47
+2.8%
+1.4%
+3.2%
+487.31
+3.0%
+487.2
+8.3%
+13.2%
+2.4%
+0.0%
+2.4%
+1.3%
+485.45
+4.7%
+2.4%
+2.5%
+1.0%
+485.48
+1.6%
+485.425
+485.48
+1.4%
+485.48
+2.5%
+485.425
+485.48
+2.5%
+485.48
+485.48
+0.0%
+2.3%
+2.6%
+abs. Anschlusshöhen Strasse
+zu definieren im Zuge TAZ- Ausführungsprojekt
+485,75
+486,00
+486,75
+487,00
+486,75
+486,50
+486,25
+486,50
+485,50
+485,75
+486,00
+486,25
+486,50
+486,75
+487,00
+487,25
+487,50
+487,75
+485,50
+485,75
+486,00
+486,25
+483,75
+484,00
+484,25
+484,50
+484,75
+485,00
+485,25
+485,50
+485,75
+486,00
+486,25
+486,50
+486,75
+485,75
+486,00
+486,25
+486,50
+486,75
+487,00
+487,25
+487,50
+487,75
+488,00
+486.8
+486,50
+486,50
+486,75
+0.0%
+485.48
+2.7%
+485.3
+485.23
+485.17
+485.45
+485.46
+485.53
+485.52
+485.52
+485.27
+Rinne
+SS
+SS
+SS
+SS
+SS
+SS
+Rinne
+Havarie
+SS
+SS
+Trinkbrunnen
+Tischtennis
+mit Spielbereichen 
+aus Hartbelag
+Tischtennis
+mit Spielbereichen 
+aus Hartbelag
+Muldenrinne Naturstein
+Mastleuchte
+Mastleuchte
+Mastleuchte
+Mastleuchte
+Unterflur
+versorgung
+Abfalleimer
+Asphalt
+Asphalt
+Asphalt
+Asphalt
+Asphalt
+Asphalt
+Asphalt
+Asphalt
+Asphalt
+Asphalt
+Asphalt
+Unterflur
+versorgung
+Abfalleimer
+Betontreppe
+Betontreppe
+Betontreppe
+Betontreppe
+Betontreppe
+Treppe
+Stellstufen
+Treppe
+Stellstufen
+Treppe
+Stellstufen
+Asphalt
+Asphalt
+Asphalt
+Gussasphalt
+Gussasphalt
+Gussasphalt
+Betontreppe
+Gussasphalt
+Gussasphalt
+Gussasphalt
+Gussasphalt
+Gussasphalt
+Asphalt
+Asphalt
+Grünfläche
+z.B. Stauden
+Grünfläche "Unterpflanzung" best. Baumscheibe
+z.B. Stauden
+Grünfläche
+z.B. Stauden
+Stützmauer Beton
+h bis ca. 70cm
+Parkplatz
+Fahrgasse 5,50m; Asphalt
+1 IV-Parkplatz 3,5x5,0m (zzgl. 30cm Wandabstand); Asphalt
+18 PW-Parkplätze Komfortstufe B 2,70x5,0m; Rasenliner
+1 Moto-Parkplatz 2,2x1,5m; Rasenliner
+Bund- und Wasserstein
+Bund- und 
+Wasserstein
+Bund- und Wasserstein
+Bund- und 
+Wasserstein
+Bund- und Wasserstein
+Poller
+2x
+Poller
+5x
+SS
+SS
+Notablauf
+SS
+Notablauf
+SS
+Notablauf
+Zaun "Maschendraht"
+h=1m
+Zaun "Maschendraht"
+h=1m
+Abbruch best. Böschungssicherung
+z.T. Erhalt
+Objektschutz Stellplatten
+Höhe Trottoir +30cm
+Objektschutz Stellplatten
+Höhe Trottoir +30cm
+Objektschutz 
++ 2 Stufen (30cm)
+Gegenlauf
+Objektschutz 
++ 2 Stufen (30cm)
+Gegenlauf
+Objektschutz Stellplatten
+Höhe Trottoir +30cm
+Anlieferung
+Eingang
+Schulhaus
+Borrweg
+Eingang
+Schulhaus
+Borrweg
+Fluchttür
+Eingang
+Schulhaus
+Friesenberg
+Eingang
+Musik-
+schule
+Muldenrinne Naturstein
+Fassadenbegrünung
+Grünfläche
+z.B. Stauden
+Wildbienen-
+Paradies
+Grünfläche
+z.B. Stauden
+Grünfläche
+Blumenwiese
+Retentionsbecken
+1
+IV
+Parkplatz
+1
+PKW
+Parkplatz
+2
+PKW
+Parkplatz
+3
+PKW
+Parkplatz
+4
+PKW
+Parkplatz
+5
+PKW
+Parkplatz
+6
+PKW
+Parkplatz
+7
+PKW
+Parkplatz
+8
+PKW
+Parkplatz
+9
+PKW
+Parkplatz
+10
+PKW
+Parkplatz
+11
+PKW
+Parkplatz
+12
+PKW
+Parkplatz
+13
+PKW
+Parkplatz
+14
+PKW
+Parkplatz
+15
+PKW
+Parkplatz
+16
+PKW
+Parkplatz
+18
+PKW
+Parkplatz
+17
+PKW
+Parkplatz
+1
+Moto
+Park-
+platz
+Grünfläche
+z.B. Stauden
+Grünfläche
+z.B. Stauden
+Grünfläche
+Stauden
+Trittplatten
+Traufstreifen
+Traufstreifen
+Traufstreifen
+Einzelsträucher neu
+Abfalleimer
+Rinne
+Einzelsträucher neu
+Grünfläche
+z.B. Stauden
+Grünfläche "Unterpflanzung" 
+best. Baumscheibe
+z.B. Stauden
+Grünfläche
+z.B. Stauden
+Grünfläche
+z.B. Stauden
+Grünfläche "Unterpflanzung" 
+best. Baumscheibe
+z.B. Stauden
+Grünfläche "Unterpflanzung" 
+best. Baumscheibe
+z.B. Stauden
+Einzelsträucher neu
+Grünfläche
+z.B. Stauden
+Grünfläche
+Blumenrasen
+Grünfläche
+Blumenrasen
+Fallschutzbelag
+Hackschnitzel
+Fallschutzbelag
+Hackschnitzel
+Velounterstand
+Stellfläche 40Velos 
+gedeckt
+Abfalleimer
+Abfalleimer
+Asphalt
+Grünfläche
+Blumenwiese
+Grünfläche
+Blumenwiese
+Grünfläche
+Blumenwiese
+FW-Zufahrt
+Schotterrasen
+FW-Zufahrt
+Schotterrasen
+FW-Zufahrt
+Schotterrasen
+Grünfläche
+z.B. Stauden
+Grünfläche
+z.B. Stauden
+Grünfläche
+z.B. Stauden
+Grünfläche
+z.B. Stauden
+Grünfläche
+z.B. Stauden
+Chaussierung
+Rinne
+Rinne
+Rinne
+Rinne
+Rinne
+Rinne
+Rinne
+Rinne
+Rinne
+Rinne
+Rinne
+Rinne
+Muldenrinne Naturstein
+SS
+Notablauf
+Rinne
+Rinne
+Rinne
+Rinne
+SS
+SS
+SS
+SS
+SS
+SS
+Sickermulde
+Sickermulde
+Sickermulde
+Allwetterplatz Borrweg
+24,5 x 40m, Elastikbelag
+Allwetterplatz Friesenberg
+26 x 40m, Elastikbelag
+Ballfang 12 x 4m
+Ballfang 9 x 4m
+Ballfang 9 x 4m
+Ballfang 12 x 4m
+Ballfang 12 x 4m
+Ballfang 9 x 4m
+Ballfang 9 x 4m
+Ballfang 12 x 4m
+SS
+Notablauf
+Unterflur-
+versorgung
+Unterflur-
+versorgung
+Unterflur-
+versorgung
+rollstuhlgerecht gem. SIA500
+Überwurf 2mm Brechsand 0/2
+Chaussierung
+rollstuhlgerecht gem. SIA500
+Überwurf 2mm Brechsand 0/2
+Chaussierung
+rollstuhlgerecht gem. SIA500
+Überwurf 2mm Brechsand 0/2
+Chaussierung
+rollstuhlgerecht gem. SIA500
+Überwurf 2mm Brechsand 0/2
+Chaussierung
+rollstuhlgerecht gem. SIA500
+Überwurf 2mm Brechsand 0/2
+Tisch-Bank-
+Kombination
+Tisch-Bank-
+Kombination
+Sitzbank
+Abfalleimer
+Einzelsträucher neu
+Einzelsträucher neu
+Einzelsträucher
+neu
+Einzelsträucher
+neu
+Einzelsträucher
+neu
+Hangsicherung
+(z.B. Findlinge)
+Strauchgruppe
+(zahlreiche junge Weiden 
+und Hasel) als Spiel- und 
+Versteckmöglichkeit
+Schaukel Nestwiege 
+mit Fallschutz 
+Elastikbelag
+Balanzierklötze
+Drehbalken
+SS
+SS
+Notausstieg 
+Schutzraum
+Notausstieg 
+Schutzraum
+Eingang
+Schutzraum
+Sitzbank
+Abfalleimer
+Abfalleimer
+Abfalleimer
+Abfalleimer
+Uhr/Lautsprecher
+Lautsprecher
+Mastleuchte
+Schild 
+FW-Zufahrt
+Schild 
+FW-Zufahrt
+Sitzbank
+Sitzbank
+Lager
+Chemie
+Zugang
+Lager
+Chemie
+Entsorgung
+Hausdienst
+Veloraum
+Rinne
+60m
+Start
+25m
+50m
+75m
+80m
+1
+2
+3
+4
+1
+2
+Verschiebung 
+best. Mastleuchte
+Verschiebung 
+best. Mastleuchte
+476.2
+476.25
+1.0%
+476.5
+476.55
+1.0%
+476.425
+0.3%
+476.355
+0.3%
+476.285
+0.3%
+0.3%
+476.335
+1.0%
+476.405
+1.0%
+476.475
+1.0%
+476.18
+2.0%
+476.05
+476.48
+30.8%
+476.4
+2.5%
+475.9
+35.8%
+476.33
+2.5%
+475.83
+35.8%
+476.26
+2.5%
+475.86
+28.6%
+475.7
+34.3%
+Böschungsfuss = OK Chaussierung +10cm
+(mögliche Sanierung Stellplatte = Drittprojekt)
+Böschungsfuss = OK Chaussierung +10cm
+(mögliche Sanierung Stellplatte = Drittprojekt)
+Böschungsfuss = OK Chaussierung +10cm
+(mögliche Sanierung Stellplatte = Drittprojekt)
+Auslaufbereich Laufbahn/
+Doppelnutzung mit Anlaufbereich Weitsprung
+Weitsprunggrube
+äussere Abmessungen: ca. 5,0 x 9,0m
+Sandfläche netto: ca. 4,90 x 8,90m
+Sandfangrinne nach 3 Seiten
+Sandabdeckung lose aufliegend m. seitl. Überstand
+Laufbahn
+äussere Abmessungen: ca. 5,0 x 100,10m
+Laufbelag netto: ca. 4,92 x 100,0m
+3m Anlaufbereich
+17m Auslaufbereich
+4 Laufbahnen à min. 1,22m (Breite Achsmass)
+Sämtliche Abmessungen inkl. Start- und Auslaufbereich
+Auslaufbereich Doppelnutzung mit Anlaufbereich Weitsprung
+Stellplatte SN4-6 + Viersteinrinne inkl. Gullys
+in Restlängen sichtbar - ansonsten vermutlich überwachsen
+Stellplatte SN4-6 + Viersteinrinne inkl. Gullys
+in Restlängen sichtbar - ansonsten vermutlich überwachsen
+Sicherheitsbereich
+Sicherheitsbereich
+Markierung
+"Absprungbalken"
+Markierung
+"Absprungbalken"
+Sicherheitsbereich
+Sicherheitsbereich
+Strauch Neupflanzung
+unterschiedli. Kronendurchmesser
+Am.ov
+Amelanchier ovalis
+Co.fl
+Cornus florida
+Co.ma
+Cornus mas
+Co.sa
+Cornus sanguinea
+Sa.pu
+Salix purpurea
+Ro.gl
+Rosa glauca
+Sa.pu
+Salix purpurea
+Sy.vu
+Syringa vulgaris
+Vi.la
+Viburnum lantana
+Legende
+Baum Neupflanzung
+unterschiedli. Kronendurchmesser
+Ac.pseu
+Acer pseudoplatanus
+Al.gl
+Alnus glutinosa
+Am.la
+Amelanchier lamarckii
+Co.av
+Coryllus avellana
+Fr.an R
+Fraxinus angustifolia 
+´Raywood´
+Fr.or
+Fraxinus ornus
+Ma.BU
+Malus ´Butterball´
+Ma.RU
+Malus ´Rudolph´
+Os.ca
+Ostrya carpinifolia
+Pr.av
+Prunus avium
+Pr.pa
+Prunus padus
+So.ar
+Sorbus aria
+So.au
+Sorbus aucuparia
+So.au F
+Sorbus aucuparia
+´Fastigiata´
+So.do
+Sorbus domestica
+So.to
+Sorbus torminalis
+Ti.co Gr
+Tilia cordata ´Greenspire´
+Ul.RE
+Ulmus ´Rebona´
+Vi.la
+Viburnum lantana
+Grundstücksgrenze
+AK unterbauter Bereich Neubau
+AK überbauter Bereich Neubau
+Rasen
+Walzasphalt schwarz
+Kastenrinne
+Randeinfassenung
+Naturstein
+Sitzbank/Tisch-Bank
+Bestandshöhe unverändert
+450.01
+Planungshöhe
+AK Retention Neubau
+Chaussierung
+Stauden
+Kletterpflanzen
+Kies Traufstreifen
+Sportbelag EPDM
+450.01
+Fallschutz Hackschnitzel
+Wiese
+Höhenlinie Planung
+Höhenlinie Bestand
+Gussasphalt schwarz
+Basketballkorb
+Kleinfeldtor 2x3m
+Ballfangzaun
+Unterflurversorgungspunkt
+Fallschutz EPDM
+Abfalleimer
+Abfalleimer Wandmontage
+Ruderalfläche Wandkies 
+feinkörnig
+Ruderalfläche Wandkies 
+mittelkörnig
+Ruderalfläche Wandkies 
+grobkörnig
+Wildbienen Totholz
+Wildbienen Bollensteine
+Zaun Knotengitter; h=1m
+Mastleuchte Bestand
+Mastleuchte Neubau
+Baum Bestand
+unterschiedli. Kronendurchmesser
+Abbruch
+Neubau
+Kletterpflanzen
+Schizophragma hydrangeoides
+Schizophragma integrifolium
+Poller demontierbar
+(FW-Schliessung)
+Feuerwehrstellfläche
+5x11m
+Feuerwehrzufahrt
+STREITHOFF
+Landschaftsarchitektur & 
+Bauconsulting GmbH
+Loorenstrasse 45
+8053 Zürich
+41 Ausschreibung
+DS
+23.03.2023
+DS
+1.399 / 0.841
+Gesamtlageplan
+23.03.2023
+2119-BE-GR-010
+1:200
+Gesuchsteller/in
+vertreten durch
+Stadt Zürich
+Borrweg 81
+8055 Zürich
+Stadt Zürich Immobilien 
+Stadt Zürich Amt für Hochbauten
+Lindenhofstrasse 21
+8021 Zürich
+Projektverfasser/in
+Plan-Nr.
+Grösse
+Verfasser
+Erstellung
+Dateiname
+AuftraggeberIn
+STREITHOFF GmbH
+Stadt Zürich Immobilien 
+Inventar-Nr.
+Auftrag/BAV
+Adresse, PLZ Ort
+Freigabe
+00000-00
+W.7202.PM / BAV 80673
+Loorenstrasse 45, 8053 Zürich
+Amt für Hochbauten
+Schulanlage Borrweg
+Ersatzneubau
+Architektur
+Baumanagement
+Elektroingenieur
+Badewassertechnik
+Türfachplaner
+WALDRAP AG
+Bernerstrasse Nord 202
+8064 Zürich
+044 512 37 00
+info@waldrap.ch
+GMS Partner AG
+Postfach
+8058 Zürich
+043 816 50 58
+info@gmspartner.ch
+Bauingenieur
+Lüchinger+Meyer Bauingenieure AG
+Limmatstrasse 275
+8005 Zürich
+044 421 43 00
+zuerich@luechingermeyer.ch
+WSP Suisse AG
+Goldschlägistrasse 16
+8952 Schlieren
+043 299 62 99
+ch-sc-info@wsp.com
+HLK Ingenieur /
+Koordination HT
+Bösch Sanitäringenieure AG
+Lerzenstrasse 16
+8953 Dietikon
+044 751 71 71
+info@boeschag.ch
+Sanitäringenieur
+GODE AG ZÜRICH
+Buckhauserstrasse 11
+8048 Zürich
+044 498 27 27
+info@gode.ch
+Beck Schwimmbadbau AG
+Bürglistrasse 29
+8400 Winterthur
+052 224 00 88
+mail@beck-schwimmbadbau.ch
+Fassadenplanung
+sutter + weidner 
+fassadenplanung gmbh
+Spitalstrasse 27
+2502 Biel 
+032 322 73 13
+info@sutter-weidner.ch
+Küchenplaner
+H PLUS S 
+Gastronomiefachplanung GmbH
+Talweg 2
+3063 Ittigen
+031 335 10 00
+info@hpluss.ch
+Bauphysik
+CSD INGENIEURE AG
+Giesshübelstrasse 62
+8021 Zürich
+044 296 70 00
+zuerich@csd.ch
+Brandschutz
+ProteQ GmbH
+Ebnatstrasse 129
+8200  Schaffhausen
+052 511 30 00
+mail@proteq.ch
+Alfacel AG
+Riedstrasse 3
+6330 Cham
+041 747 20 20
+info@alfacel.ch
+Geologe
+Friedli Partner AG
+Nansenstrasse 5
+8050 Zürich
+044 315 10 10
+info@friedlipartner.ch
+Pro Engineering Security AG
+Leutschenbachstrasse 58
+8050 Zürich
+061 385 50 20
+info@proengineering-security.ch
+Gebäude-
+automation
+Landschafts-
+architektur
+ECO
+Plot
+Status
+/
+23.03.2023
+Grundriss
+M
+Stadt Zürich
+Amt für Hochbauten
+Lindenhofstrasse 21
+Postfach, 8021 Zürich
+Tel. 044 412 11 11
+Fax 044 212 19 36
+www.stadt-zuerich.ch/hochbau
+/
+2119 LP33 Lageplan Aenderungseingabe Vorabzug 230323 neu.vwx
+STREITHOFF
+Landschaftsarchitektur & 
+Bauconsulting GmbH
+Loorenstrasse 45
+8053 Zürich
+Bauentscheid 471/22
+Borrweg 85, 85a, Im Rossweidli 38a
+Abänderungsplan

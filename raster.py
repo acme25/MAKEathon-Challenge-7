@@ -1,7 +1,8 @@
+#Kann man theoretisch löschen
 # pdf_to_tiles.py
 import fitz, os, cv2, math, numpy as np
 
-PDF_PATH = "Quartierpark Thurgauerstrasse.pdf"
+PDF_PATH = "2119-BE-GR-010-00 Gesamtlageplan 230323.pdf"
 OUT_DIR  = "bites"
 DPI = 300           # Auflösung
 TILE = 1024         # Kachelgröße

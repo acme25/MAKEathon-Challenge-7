@@ -17,7 +17,7 @@ import io
 from PIL import Image
 import pytesseract
 
-PDF_PATH = r"Quartierpark Thurgauerstrasse.pdf"
+PDF_PATH = r"2119-BE-GR-010-00 Gesamtlageplan 230323.pdf"
 
 LANG = "deu+eng"
 
