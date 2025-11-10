@@ -1,2 +1,0 @@
-yolo detect train model=yolov8n.pt data=data/dataset_det.yaml imgsz=1024 epochs=100 batch=8 device=0
-# Tip: wenn schnellere Konvergenz gewünscht: model=yolov8m.pt (stärker, braucht mehr VRAM)
