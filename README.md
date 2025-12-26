@@ -1,5 +1,5 @@
-# Make-it-great
-Trying out the makeathon challenge 7 by my own
+# KI-gestützte Materialerkennung aus Landschaftsplänen
+MAKEathon Challenge 7
 
 ## Projektkontext & Auftrag
 Im Rahmen der MAKEathon Challenge besteht die Aufgabe darin, den Grundstein für eine intelligente Plattform zur nachhaltigen Stadt- und Landschaftsplanung zu legen.
@@ -30,67 +30,38 @@ Die entwickelt Anwendung ermöglicht es:
   - Prüfen des PDF-Renderings
   - Testen der YOLO-Erkennung auf einer einzelnen Seite
 
-## How to use
+## Technischer Stack
+- Backend: FastAPI (Python)
+- Computer Vision: YOLOv8 (Ultralytics)
+- Bilderverarbeitung: OpenCV
+- PDF-Verarbeitung: pdf2image
+- Semantik: Sentence Embeddings
+- Knowledge Graph: Neo4j
+- Frontend: HTML, CSS, JavaScript (Drag & Drop Upload)
+
+#### How to use
 ### Voraussetzungen:
-- VS Code oder Pycharm als Applikation
-- `requirements.txt` ausführen während der Installation (siehe Schritt 3)
-- Eigenen API Key -> Wir empfehlen CEREBRAS
+- Python 3.10 oder 3.11
+- Installierte Abhängigkeiten (inkl. YOLOv8, FastAPI)
+- Optional: laufende Neo4j-Instanz für Knowledge-Graph-Funktionen
 
-1. ### Virtuelle Umgebung erstellen und aktivieren
-```
-python -m venv ./.venv
-````
-.\.venv\Scripts\Activate
-pip install -r .\requirements.txt
-```
+### Weboberfläche verwenden
+1. Öffne die Weboberfläche im Browser
+2. Ziehe einen PDF-Plan per Drag & Drop in das Upload-Feld oder wähle eine Datei über den Dateidialog aus.
+3. Die Datei wird automatisch hochgeladen und verarbeitet
+   - PDFs werden seitenweise in Bilder umgewandelt
+   - YOLOv8 erkennt relevante Objekte im Plan
+   - Erkannte Objekte werden semantisch zugeordnet
+4. Das Ergebnis wird:
+   - Im Frontend angezeigt (Bild)
+   - Oder als Download bereitgestellt (je nach Konfiguration)
 
-4. ### .env Datei erstellen
+## Ausblick
+Mögliche Erweiterungen:
+- Training eines domänenspezifischen YOLO-Modells
+- Generierung eines annotierten PDFs
+- Integration von:
+    - Nachhaltigkeitskennzahlen
+    - Lieferanten- und Materialdatenbanken
+- Erweiterte Web-UI mit Projekt-Historie
 
-----------------------------------------------
-# File Autolabel.py
-# Auto-Vorlabel für Baupläne (zusammenhängende Flächen)
-
-Dieses Skript erkennt **zusammenhängende Flächen** in deinen Bauplänen (PDF/JPG/PNG) und erzeugt **visuelle Ergebnisbilder** mit farbigen Overlays. Es klassifiziert **nicht** (z. B. „Straße/Grünfläche“), sondern gruppiert nur Flächen – perfekt als Vorlabel, das du später in CVAT noch feingranular anpassen kannst.
-
-## Installation
-
-```bash
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install opencv-python numpy pdf2image pillow
-# (Optional) Fallback für PDF -> Bild:
-pip install pymupdf
-```
-
-**Poppler** (nur wenn `pdf2image` genutzt wird) installieren:
-- macOS: `brew install poppler`
-- Ubuntu/Debian: `sudo apt-get install poppler-utils`
-- Windows: Poppler herunterladen und den `bin/`-Pfad zur `PATH`-Umgebungsvariablen hinzufügen.
-
-## Nutzung
-
-Lege deine Pläne in einen Ordner, z. B. `./plans`, und starte dann:
-
-```bash
-python autolabel_regions.py --input ./plans --output ./output --dpi 300 --clusters 8 --min-area 1500
-```
-
-Parameter (wichtigste):
-- `--clusters` = Anzahl Farbcluster für K‑Means (mehr = feiner, langsamer)
-- `--min-area` = minimale Regionfläche in Pixel (kleine Artefakte wegfiltern)
-- `--max-size` = längste Bildkante zum Beschleunigen (0 = Originalgröße)
-- `--outline` = Konturstärke
-
-Die Ergebnisbilder liegen danach unter `./output/` und heißen z. B. `PlanXY_page01_segmented.png`.
-
-## Tipps
-- Wenn sehr viele winzige Regionen entstehen, **erhöhe `--min-area`** (z. B. 4000–8000).
-- Wenn Regionen zu grob sind, **erhöhe `--clusters`** (z. B. 10–12).
-- Für sehr große PDFs kannst du **`--max-size`** auf 1800–2200 setzen, das beschleunigt.
-
-## Autolabel.py
-- konvertiert automatisch alle deine PDF-Pläne zu Bildern,
-- erkennt zusammenhängende Flächen (Regionen),
-- zeichnet diese farbig und nummeriert sie,
-- speichert fertige Bilder z. B. als
-- plan_page01_segmented.png im Ordner output/.
