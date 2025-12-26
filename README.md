@@ -1,8 +1,34 @@
 # Make-it-great
 Trying out the makeathon challenge 7 by my own
 
-## Use Case
-Planners need to manually read and write down the materials from the construction plans. Zoë wants to automatize this process. Therefore we create a solution which is shown in this repository.
+##Projektkontext & Auftrag
+Im Rahmen der MAKEathon Challenge besteht die Aufgabe darin, den Grundstein für eine intelligente Plattform zur nachhaltigen Stadt- und Landschaftsplanung zu legen.
+
+Heute verbringen Planner:innen viel Zeit damit, Pläne manuell zu analysieren und Materialien zu identifizieren. Dieses Projekt zeigt, wie dieser Prozess mithilfe von Computer Vision, KI und semantischer Modellierung automatisiert werden kann.
+
+## Ziel der Anwendung
+Die entwickelt Anwendung ermöglicht es:
+- Landschafts- oder Stadtpläne als PDF hochzuladen
+- Relevante Objekte automatisch mithilfe eines YOLOv8-Modells zu erkennen
+- Erkannte Objekte semantisch auf Material-Oberklassen abzubilden
+- Diese Klassen über einen Knowledge Graph (Neo4j) weiter zu strukturieren
+
+## Funktionsübersicht
+### Plan-Analyse
+- Upload eines PDFs
+- PDFs werden seitenweise in Bilder gerendet
+- YOLOv8 erkennt Objekte pro Seite
+- Ausgabe strukturierter Erkennungsergebnisse (Label, Confidence, Bounding Box)
+
+### Semantische Einordnung
+- YOLO-Labels werden mithilfe von Embeddings auf Oberklassen (Roots) gemappt
+- Über einen Neo4j Knowledge Graph können:
+  - ganze Teilbäume
+  - Material-Hierarchien abgefragt werden
+### Debug & Entwicklung
+- Separate Debug-Endpunkte zum:
+  - Prüfen des PDF-Renderings
+  - Testen der YOLO-Erkennung auf einer einzelnen Seite
 
 ## How to use
 ### Voraussetzungen:
