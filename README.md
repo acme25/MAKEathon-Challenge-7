@@ -1,67 +1,50 @@
-# KI-gestützte Materialerkennung aus Landschaftsplänen
+# PlanMind
+Automatische Datenextraktion und Materialkategorisierung aus Bausplänen
 MAKEathon Challenge 7
 
 ## Projektkontext & Auftrag
-Im Rahmen der MAKEathon Challenge besteht die Aufgabe darin, den Grundstein für eine intelligente Plattform zur nachhaltigen Stadt- und Landschaftsplanung zu legen.
-
-Heute verbringen Planner:innen viel Zeit damit, Pläne manuell zu analysieren und Materialien zu identifizieren. Dieses Projekt zeigt, wie dieser Prozess mithilfe von Computer Vision, KI und semantischer Modellierung automatisiert werden kann.
+Arhcitek:innen und Planer:innen arbeiten häufig mit komplexen Entwurfsplänen im PDF-Format, die eine grosse Vielfalt an Baumaterialien enthalten.
+Die manuelle Extraktion und Kategorisierung dieser Materialien ist zeitaufwendig, fehleranfällig und verzögert Kostenkalkulation sowie Projektplanung.
 
 ## Ziel der Anwendung
-Die entwickelt Anwendung ermöglicht es:
-- Landschafts- oder Stadtpläne als PDF hochzuladen
-- Relevante Objekte automatisch mithilfe eines YOLOv8-Modells zu erkennen
-- Erkannte Objekte semantisch auf Material-Oberklassen abzubilden
-- Diese Klassen über einen Knowledge Graph (Neo4j) weiter zu strukturieren
+Durch die Kombination von Computer Vision (OpenCV), LLM-basierter Semantik und einem Wissensgraphen verfolgt PlanMind folgende Ziele:
+- Identifikation aller relevanten Materialien und Komponenten direkt aus PDF-Plänen
+- Verständnis der Beziehungen zwischen verschiedenen Materialtypen
+- Erstellung einer strukturierten, kategorisierten Materialliste
+- Reduktion manueller Arbeit und Erhöhung der Genauigkeit
+- Unterstützung einer datengetriebenen Planung in Architektur- und Designprozessen
 
-## Funktionsübersicht
-### Plan-Analyse
-- Upload eines PDFs
-- PDFs werden seitenweise in Bilder gerendet
-- YOLOv8 erkennt Objekte pro Seite
-- Ausgabe strukturierter Erkennungsergebnisse (Label, Confidence, Bounding Box)
+## Zielsetzung 
+Durch die Kombination von Computer Vision (OpenCV), LLM-basierter Semantik und einem Wissensgraphen verfolgt PlanMind folgende Ziele:
+- Identifikation aller relevanter Materialien und Komponenten direkt aus PDF-Plänen
+- Verständnis der Beziehungen zwischen verschiedenen Materialtypen
+- Erstellung einer strukturierten, kategorisierten Materiallisten
+- Reduktion manueller Arbeit und Erhöhung der Genauigkeit
 
-### Semantische Einordnung
-- YOLO-Labels werden mithilfe von Embeddings auf Oberklassen (Roots) gemappt
-- Über einen Neo4j Knowledge Graph können:
-  - ganze Teilbäume
-  - Material-Hierarchien abgefragt werden
-### Debug & Entwicklung
-- Separate Debug-Endpunkte zum:
-  - Prüfen des PDF-Renderings
-  - Testen der YOLO-Erkennung auf einer einzelnen Seite
+## Technologischer Ansatz
+- Computer Vision (OpenCV)
+  - Erkennung zusammenhängender Flächen (Segmentierung)
+  - Kontur- und Mustererkennung
+  - Farbige Overlays
+  - K-Means-Farbclustering zur Materialunterscheidung
+- LLM-basierte Semantik
+- Wissensgraph (Neo4j)
 
-## Technischer Stack
-- Backend: FastAPI (Python)
-- Computer Vision: YOLOv8 (Ultralytics)
-- Bilderverarbeitung: OpenCV
-- PDF-Verarbeitung: pdf2image
-- Semantik: Sentence Embeddings
-- Knowledge Graph: Neo4j
-- Frontend: HTML, CSS, JavaScript (Drag & Drop Upload)
+## Systemprozess
+1. Upload eines Entwurfsplans
+2. Analyse des Plans mittels OpenCV
+3. Erkennung von Formen und Flächen
+4. Semantische Zuordnung der erkannten Strukturen zu Materialien
+5. Abgleich mit Excel-Materialliste
+6. Ausgabe einer kategorisierten Materialliste
 
-#### How to use
-### Voraussetzungen:
-- Python 3.10 oder 3.11
-- Installierte Abhängigkeiten (inkl. YOLOv8, FastAPI)
-- Optional: laufende Neo4j-Instanz für Knowledge-Graph-Funktionen
+## How to use
+1. Backend starten
+2. Browser öffen
+3. Bauplan (PDF) hochladen
+4. Automatische Analyse & Materialkategorisierung abwarten
+5. Strukturierte Ergebnisse weiterverwenden
 
-### Weboberfläche verwenden
-1. Öffne die Weboberfläche im Browser
-2. Ziehe einen PDF-Plan per Drag & Drop in das Upload-Feld oder wähle eine Datei über den Dateidialog aus.
-3. Die Datei wird automatisch hochgeladen und verarbeitet
-   - PDFs werden seitenweise in Bilder umgewandelt
-   - YOLOv8 erkennt relevante Objekte im Plan
-   - Erkannte Objekte werden semantisch zugeordnet
-4. Das Ergebnis wird:
-   - Im Frontend angezeigt (Bild)
-   - Oder als Download bereitgestellt (je nach Konfiguration)
 
-## Ausblick
-Mögliche Erweiterungen:
-- Training eines domänenspezifischen YOLO-Modells
-- Generierung eines annotierten PDFs
-- Integration von:
-    - Nachhaltigkeitskennzahlen
-    - Lieferanten- und Materialdatenbanken
-- Erweiterte Web-UI mit Projekt-Historie
+
 
