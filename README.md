@@ -1,7 +1,7 @@
 # Make-it-great
 Trying out the makeathon challenge 7 by my own
 
-##Projektkontext & Auftrag
+## Projektkontext & Auftrag
 Im Rahmen der MAKEathon Challenge besteht die Aufgabe darin, den Grundstein für eine intelligente Plattform zur nachhaltigen Stadt- und Landschaftsplanung zu legen.
 
 Heute verbringen Planner:innen viel Zeit damit, Pläne manuell zu analysieren und Materialien zu identifizieren. Dieses Projekt zeigt, wie dieser Prozess mithilfe von Computer Vision, KI und semantischer Modellierung automatisiert werden kann.
