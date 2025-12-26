@@ -3,7 +3,7 @@ Automatische Datenextraktion und Materialkategorisierung aus Bausplänen
 MAKEathon Challenge 7
 
 ## Projektkontext & Auftrag
-Architek:innen und Planer:innen arbeiten häufig mit komplexen Entwurfsplänen im PDF-Format, die eine grosse Vielfalt an Baumaterialien enthalten.
+Architekt:innen und Planer:innen arbeiten häufig mit komplexen Entwurfsplänen im PDF-Format, die eine grosse Vielfalt an Baumaterialien enthalten.
 Die manuelle Extraktion und Kategorisierung dieser Materialien ist zeitaufwendig, fehleranfällig und verzögert Kostenkalkulation sowie Projektplanung.
 
 ## Ziel der Anwendung
