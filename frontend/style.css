@@ -3,72 +3,176 @@
   font-family: Inter, system-ui, sans-serif;
 }
 
-body {
-  background: radial-gradient(circle at top, #1a1a1a, #0f0f0f);
-  color: white;
-  height: 100vh;
+:root{
+  --bg: #e0dfb8;
+  --paper: #fbfbf3;
+  --ink: #111111;
+  --muted: rgba(17,17,17,0.68);
+  --olive: #5f6f45;
+  --line: rgba(95,111,69,0.26);
+}
+
+/* Hintergrund wie im Mock */
+body{
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
+  display:flex;
+  align-items:flex-start;     /* Card wirkt höher wie in Mock */
+  justify-content:center;
+  padding-top: 110px;         /* Abstand nach oben */
+  background: var(--bg);
+  color: var(--ink);
+  position: relative;
+  overflow: hidden;
 }
 
-.container {
-  width: 480px;
-  padding: 32px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+/* weiches Licht + Vignette */
+body::before{
+  content:"";
+  position:absolute;
+  inset:-220px;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(255,255,255,0.40), rgba(255,255,255,0) 58%),
+    radial-gradient(circle at 50% 110%, rgba(0,0,0,0.12), rgba(0,0,0,0) 56%);
+  pointer-events:none;
 }
 
-h1 {
-  margin-bottom: 8px;
+/* ---------- Bäume unten ---------- */
+.scene{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index: 0;
 }
 
-p {
-  color: #aaa;
-  margin-bottom: 24px;
+.trees{
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: -16px;
+  height: 280px;            /* mehr “Boden”-Gefühl */
 }
 
-#dropzone {
-  border: 2px dashed rgba(255,255,255,0.3);
-  border-radius: 16px;
-  padding: 48px 24px;
+.tree{
+  position:absolute;
+  bottom: 0;
+  height:auto;
+  opacity: 0.97;
+  filter: drop-shadow(0 14px 18px rgba(25,20,10,0.12));
+}
+
+/* Positionen/Größen nah an deiner Vision */
+.t1{ left: 2%;  width: 170px; bottom:-14px; }
+.t2{ left: 14%; width: 250px; bottom:-22px; }
+.t3{ left: 36%; width: 165px; bottom:-14px; }
+.t4{ left: 50%; width: 300px; bottom:-26px; }
+.t5{ left: 70%; width: 220px; bottom:-22px; }
+.t6{ left: 84%; width: 300px; bottom:-30px; }
+
+/* ---------- Card ---------- */
+.container{
+  width: 560px;
+  background: var(--paper);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 22px 70px rgba(25,20,10,0.22);
+  z-index: 2;
+}
+
+/* Titel wie Plakat */
+.container h1{
+  margin: 0;
+  padding: 26px 28px 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-weight: 900;
+  font-size: 34px;
+}
+
+/* Text + Linie */
+.container p{
+  margin: 0;
+  padding: 0 28px 20px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+/* ---------- Dropzone ---------- */
+#dropzone{
+  margin: 22px 28px 26px;
+  padding: 34px 20px;
+  border-radius: 14px;
+  border: 2px solid var(--line);
+  background: rgba(224,223,184,0.35);
+  position: relative;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
 }
 
-#dropzone:hover {
-  border-color: #7c7cff;
-  background: rgba(124,124,255,0.1);
+/* UPLOAD Tag */
+#dropzone::before{
+  content: "UPLOAD";
+  position: absolute;
+  top: -12px;
+  left: 14px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.9px;
+  color: var(--olive);
+  background: var(--paper);
+  border: 1px solid var(--line);
 }
 
-#dropzone.dragover {
-  border-color: #7c7cff;
-  background: rgba(124,124,255,0.2);
-  transform: scale(1.02);
+/* inneres gestricheltes Feld */
+#dropzone::after{
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 10px;
+  border: 1px dashed rgba(95,111,69,0.35);
+  pointer-events: none;
 }
 
-#dropzone span {
-  font-size: 18px;
-  color: #ddd;
+#dropzone:hover{
+  transform: translateY(-1px);
+  border-color: rgba(95,111,69,0.42);
+  background: rgba(224,223,184,0.48);
 }
 
-#loading {
-  margin-top: 20px;
+#dropzone.dragover{
+  transform: translateY(-2px) scale(1.01);
+  border-color: rgba(95,111,69,0.65);
+  background: rgba(95,111,69,0.14);
+}
+
+#dropzone span{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 16px;
-  color: #7c7cff;
+  font-weight: 750;
+  color: rgba(17,17,17,0.82);
 }
 
-img {
-  margin-top: 24px;
-  max-width: 100%;
+/* Loading + Result */
+#loading{
+  margin: 0 28px 18px;
+  color: var(--olive);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+img#result{
+  margin: 0 28px 28px;
+  max-width: calc(100% - 56px);
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 1px solid rgba(95,111,69,0.22);
+  box-shadow: 0 14px 40px rgba(25,20,10,0.18);
 }
 
-.hidden {
-  display: none;
-}
+.hidden{ display:none; }

@@ -3,6 +3,9 @@ const fileInput = document.getElementById("fileInput");
 const resultImg = document.getElementById("result");
 const loading = document.getElementById("loading");
 
+// ✅ Backend-URL fest verdrahten (damit es immer passt)
+const API_BASE = "http://127.0.0.1:8000";
+
 dropzone.addEventListener("click", () => fileInput.click());
 
 dropzone.addEventListener("dragover", (e) => {
@@ -33,14 +36,25 @@ async function handleFile(file) {
   const formData = new FormData();
   formData.append("file", file);
 
-  const response = await fetch("/process", {
-    method: "POST",
-    body: formData
-  });
+  try {
+    const response = await fetch(`${API_BASE}/process`, {
+      method: "POST",
+      body: formData,
+    });
 
-  const blob = await response.blob();
-  resultImg.src = URL.createObjectURL(blob);
+    if (!response.ok) {
+      const text = await response.text();
+      alert(`Server-Fehler (${response.status}): ${text}`);
+      loading.classList.add("hidden");
+      return;
+    }
 
-  loading.classList.add("hidden");
-  resultImg.classList.remove("hidden");
+    const blob = await response.blob();
+    resultImg.src = URL.createObjectURL(blob);
+    resultImg.classList.remove("hidden");
+  } catch (err) {
+    alert("Backend nicht erreichbar. Starte den Server mit: python -m uvicorn server:app --reload --host 127.0.0.1 --port 8000");
+  } finally {
+    loading.classList.add("hidden");
+  }
 }

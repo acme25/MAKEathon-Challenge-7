@@ -1,46 +1,77 @@
-from fastapi import FastAPI, UploadFile
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi import FastAPI, UploadFile, File
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
-import subprocess
+
 import uuid
-import os
-import glob
+import shutil
+import subprocess
+from pathlib import Path
 
 app = FastAPI()
 
+# ✅ Frontend-Dateien (CSS/JS/PNGs) unter /static ausliefern
+#    -> /static/style.css, /static/app.js, /static/tree_round.png ...
 app.mount("/static", StaticFiles(directory="frontend"), name="static")
 
-INPUT_DIR = "./tmp"
-OUTPUT_DIR = "./output"
-os.makedirs(INPUT_DIR, exist_ok=True)
-os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-
-@app.get("/", response_class=HTMLResponse)
-def ui():
-    with open("frontend/index.html") as f:
-        return f.read()
+# ✅ Startseite: index.html aus dem frontend-Ordner ausliefern
+@app.get("/")
+def index():
+    return FileResponse("frontend/index.html")
 
 
 @app.post("/process")
-async def process(file: UploadFile):
-    job_id = str(uuid.uuid4())
-    input_path = os.path.join(INPUT_DIR, f"{job_id}_{file.filename}")
+async def process(file: UploadFile = File(...)):
+    """
+    1) Upload speichern
+    2) autolabel.py aufrufen (input-dir -> output-dir)
+    3) Erstes erzeugtes PNG zurückgeben
+    """
+    try:
+        Path("tmp").mkdir(exist_ok=True)
+        Path("output").mkdir(exist_ok=True)
 
-    with open(input_path, "wb") as f:
-        f.write(await file.read())
+        run_id = str(uuid.uuid4())
+        in_dir = Path("tmp") / run_id
+        out_dir = Path("output") / run_id
+        in_dir.mkdir(parents=True, exist_ok=True)
+        out_dir.mkdir(parents=True, exist_ok=True)
 
-    subprocess.run([
-        "python3",
-        "autolabel.py",
-        "--input", INPUT_DIR,
-        "--output", OUTPUT_DIR
-    ], check=True)
+        # Upload speichern
+        ext = (Path(file.filename).suffix or ".bin").lower()
+        in_path = in_dir / f"upload{ext}"
 
-    result_files = sorted(
-        glob.glob(os.path.join(OUTPUT_DIR, "*_segmented.png")),
-        key=os.path.getmtime,
-        reverse=True
-    )
+        with open(in_path, "wb") as f:
+            shutil.copyfileobj(file.file, f)
 
-    return FileResponse(result_files[0])
+        # autolabel.py ausführen
+        cmd = [
+            "python",
+            "autolabel.py",
+            "--input", str(in_dir),
+            "--output", str(out_dir),
+            "--dpi", "300",
+            "--clusters", "8",
+            "--min-area", "1500",
+            "--max-size", "2500",
+            "--outline", "2",
+        ]
+        subprocess.run(cmd, check=True)
+
+        # Erstes PNG finden
+        pngs = sorted([p for p in out_dir.iterdir() if p.suffix.lower() == ".png"])
+        if not pngs:
+            return JSONResponse(
+                {"error": "Kein PNG erzeugt. Prüfe output/ und Server-Logs."},
+                status_code=500,
+            )
+
+        return FileResponse(str(pngs[0]), media_type="image/png")
+
+    except subprocess.CalledProcessError as e:
+        return JSONResponse(
+            {"error": f"autolabel.py ist abgestürzt: {e}"},
+            status_code=500,
+        )
+    except Exception as e:
+        return JSONResponse({"error": str(e)}, status_code=500)

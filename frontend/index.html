@@ -2,16 +2,37 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>MAKEathon – Plan Analyzer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlanMind – Design Plan Analysis</title>
 
-  <!-- ✅ WICHTIG -->
+  <!-- ✅ WICHTIG: jetzt über /static -->
   <link rel="stylesheet" href="/static/style.css" />
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>PlanMind</h1>
-    <p>Lege hier einen Bauplan ab, damit zusammenhängende Flächen automatisch analysiert werden.</p>
+  <!-- Hintergrund (Bäume) -->
+  <div class="scene" aria-hidden="true">
+    <div class="trees">
+      <img class="tree t1" src="/static/tree_round.png" alt="" />
+      <img class="tree t3" src="/static/tree_round.png" alt="" />
+      <img class="tree t4" src="/static/tree_round.png" alt="" />
+
+      <!-- Achtung: dein File heißt tree_core.png (nicht cone) -->
+      <img class="tree t2" src="/static/tree_core.png" alt="" />
+      <img class="tree t5" src="/static/tree_core.png" alt="" />
+      <img class="tree t6" src="/static/tree_core.png" alt="" />
+    </div>
+  </div>
+
+  <!-- Card -->
+  <main class="container">
+    <h1>PLANMIND</h1>
+
+    <p>
+      Lege hier einen Bauplan ab, damit zusammenhängende
+      Flächen automatisch analysiert werden.
+    </p>
 
     <div id="dropzone">
       <span>📐 Drag & Drop deinen Plan</span>
@@ -22,10 +43,10 @@
       ⏳ Analyse läuft…
     </div>
 
-    <img id="result" class="hidden" />
-  </div>
+    <img id="result" class="hidden" alt="Analyse-Ergebnis" />
+  </main>
 
-  <!-- ✅ WICHTIG -->
+  <!-- ✅ WICHTIG: jetzt über /static -->
   <script src="/static/app.js"></script>
 </body>
 </html>
