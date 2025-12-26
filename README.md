@@ -40,7 +40,7 @@ Durch die Kombination von Computer Vision (OpenCV), LLM-basierter Semantik und e
 
 ## How to use
 1. Backend starten
-2. Browser öffen
+2. Browser öffnen
 3. Bauplan (PDF) hochladen
 4. Automatische Analyse & Materialkategorisierung abwarten
 5. Strukturierte Ergebnisse weiterverwenden
