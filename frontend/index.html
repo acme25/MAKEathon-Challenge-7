@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>MAKEathon – Plan Analyzer</title>
+
+  <!-- ✅ WICHTIG -->
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Plan Analyzer</h1>
+    <p>Ziehe einen Bauplan hier hinein</p>
+
+    <div id="dropzone">
+      <span>📐 Drag & Drop Plan</span>
+      <input type="file" id="fileInput" hidden />
+    </div>
+
+    <div id="loading" class="hidden">
+      ⏳ Analyse läuft…
+    </div>
+
+    <img id="result" class="hidden" />
+  </div>
+
+  <!-- ✅ WICHTIG -->
+  <script src="/static/app.js"></script>
+</body>
+</html>

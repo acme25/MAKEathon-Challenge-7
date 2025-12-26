@@ -52,20 +52,20 @@ def get_subtree(name: str, depth: int = 4):
     results = [r["child"] for r in neo4j_db.run_query(query, {"name": name})]
     return {"root": name, "depth": depth, "children": results}
 
-@app.get("/kg/map_term")
-def map_term(term: str, top_k: int = 3):
-    """
-    Semantische Zuordnung eines Begriffs (YOLO-Label oder User-Input)
-    zu Kategorien aus dem Knowledge Graph.
-    """
-    matches = best_categories_for_term(term, top_k=top_k)
-    return {
-        "term": term,
-        "matches": [
-            {"category": name, "score": score}
-            for name, score in matches
-        ]
-    }
+# @app.get("/kg/map_term")
+# def map_term(term: str, top_k: int = 3):
+#     """
+#     Semantische Zuordnung eines Begriffs (YOLO-Label oder User-Input)
+#     zu Kategorien aus dem Knowledge Graph.
+#     """
+#     matches = best_categories_for_term(term, top_k=top_k)
+#     return {
+#         "term": term,
+#         "matches": [
+#             {"category": name, "score": score}
+#             for name, score in matches
+#         ]
+#     }
 
 @app.get("/kg/map_root")
 def map_root(term: str, top_k: int = 2):
